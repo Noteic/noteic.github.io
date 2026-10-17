@@ -16,7 +16,7 @@ function Schreib([string]$pfad, [string]$text) {
 function Kodiere([string]$s) { [System.Net.WebUtility]::HtmlEncode($s) }
 function Kennung([string]$s) {
   $s = [System.Net.WebUtility]::HtmlDecode(($s -replace '<[^>]+>', '')).ToLowerInvariant()
-  $s = $s -replace "['’]", '' -replace '[^a-z0-9]+', '-'
+  $s = $s -replace ("['" + [char]0x2019 + ']'), '' -replace '[^a-z0-9]+', '-'
   $s.Trim('-')
 }
 
@@ -139,7 +139,7 @@ for ($i = 0; $i -lt $alle.Count; $i++) {
     $pager = "    <nav class=`"pager`" aria-label=`"Previous and next page`">`n$($teile -join "`n")`n    </nav>"
   }
 
-  $seitentitel = if ($kopf.pagetitle) { $kopf.pagetitle } elseif ($e.Pfad -eq '') { 'Noteic' } else { "$titel · Noteic" }
+  $seitentitel = if ($kopf.pagetitle) { $kopf.pagetitle } elseif ($e.Pfad -eq '') { 'Noteic' } else { "$titel " + [char]0x00B7 + " Noteic" }
   $kanon = if ($ist404) { $Adresse } elseif ($e.Pfad -eq '') { $Adresse } else { "$Adresse$($e.Pfad)/" }
   $klasse = if ($kopf.layout -eq 'wide' -or $toc -eq '') { ' wide' } else { '' }
 
