@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{include:head}}
+</head>
+<body class="docs" data-root="{{root}}" data-index="{{indexfile}}">
+{{include:kopf}}
+<div class="layout{{layoutclass}}">
+  <nav class="side" aria-label="Guide">
+    <div class="side-head"><img src="{{root}}assets/img/noteic-64.png" width="30" height="30" alt="">Noteic</div>
+{{nav}}
+  </nav>
+  <main class="content" id="main">
+    <article>
+{{content}}
+{{pager}}
+    </article>
+  </main>
+{{toc}}
+</div>
+{{include:fuss}}
+</body>
+</html>

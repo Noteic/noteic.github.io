@@ -1,0 +1,26 @@
+Home | 
+Download | download
+# Guide
+Getting started | guide
+Pens | guide/pens
+Highlighter | guide/highlighter
+Eraser | guide/eraser
+Fill and laser pointer | guide/fill-and-laser
+Selection and lasso | guide/selection
+Shapes | guide/shapes
+Ruler and protractor | guide/ruler-and-protractor
+Text, formulas and tables | guide/text
+Memo tape | guide/memo-tape
+Links | guide/links
+Handwriting to text | guide/handwriting-to-text
+Pages and paper | guide/pages-and-paper
+PDF | guide/pdf
+Library | guide/library
+Tabs and windows | guide/tabs-and-windows
+Customize the toolbar | guide/toolbar
+Settings | guide/settings
+Keyboard shortcuts | guide/shortcuts
+#
+What's new | whats-new
+Privacy | privacy
+Support | support
