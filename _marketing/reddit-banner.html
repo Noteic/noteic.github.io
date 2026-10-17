@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>r/Noteic banner</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #070912; }
+  .banner {
+    position: relative; overflow: hidden; width: 1072px; height: 128px; display: none;
+    background: linear-gradient(120deg, #0a0f24 0%, #121a3d 38%, #1d1a4a 68%, #2a1c55 100%);
+    font-family: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif; color: #fff;
+  }
+  .banner.mobile { width: 1080px; }
+  body.desktop .banner.desktop, body.mobile .banner.mobile { display: block; }
+  .grid {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.13) 1px, transparent 1.2px);
+    background-size: 16px 16px; background-position: 4px 6px;
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,.55), #000 40%, #000 70%, rgba(0,0,0,.6));
+  }
+  .glow { position: absolute; border-radius: 50%; filter: blur(34px); }
+  .ink { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .text { position: absolute; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; }
+  .claim { font-size: 30px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; white-space: nowrap; }
+  .grad { background: linear-gradient(92deg, #7fb2ff 0%, #b9a6ff 60%, #8de0ff 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { margin-top: 8px; display: flex; gap: 7px; }
+  .chip {
+    font: 600 11.5px/1 "Segoe UI Variable Text", "Segoe UI", sans-serif; color: #dfe5ff; white-space: nowrap;
+    padding: 5px 9px; border-radius: 999px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.14);
+  }
+  .note { position: absolute; font-family: "Ink Free", "Segoe Print", cursive; color: #c9bfff; white-space: nowrap; }
+</style>
+</head>
+<body>
+<script>document.body.className = (location.hash || "#desktop").slice(1);</script>
+
+<div class="banner desktop">
+  <div class="glow" style="left:210px; top:-70px; width:330px; height:170px; background:rgba(60,130,255,.45)"></div>
+  <div class="glow" style="left:700px; top:20px; width:360px; height:170px; background:rgba(150,110,255,.42)"></div>
+  <div class="glow" style="left:-60px; top:40px; width:240px; height:140px; background:rgba(80,200,255,.18)"></div>
+  <div class="grid"></div>
+  <svg class="ink" viewBox="0 0 1072 128" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M18 98 C 60 70, 92 112, 132 84 S 196 60, 226 92" stroke="#ff5fa2" stroke-width="3.2" opacity=".85"/>
+    <path d="M30 40 C 52 26, 70 52, 96 34 S 140 20, 160 38" stroke="#4b8dff" stroke-width="2.6" opacity=".7"/>
+    <path d="M178 22 l7 0 M181.5 18.5 l0 7" stroke="#ffd166" stroke-width="2.2" opacity=".85"/>
+    <circle cx="60" cy="18" r="2.2" fill="#8de0ff" stroke="none" opacity=".8"/>
+    <path d="M1004 18 c 14 -10, 30 10, 46 -2" stroke="#2ecc8f" stroke-width="2.6" opacity=".8"/>
+    <path d="M940 108 q 18 -14 36 0 t 36 0" stroke="#ff9f43" stroke-width="2.6" opacity=".75"/>
+    <path d="M1046 100 l9 0 M1050.5 95.5 l0 9" stroke="#ff5fa2" stroke-width="2.2" opacity=".85"/>
+
+
+  </svg>
+  <div class="text" style="left:292px">
+    <div class="claim" style="font-size:25px">Handwritten notes, with ink that <span class="grad">keeps up with your pen.</span></div>
+    <div class="sub">
+      <span class="chip">Pressure-sensitive ink</span>
+      <span class="chip">Write on PDFs</span>
+      <span class="chip">Handwriting to text</span>
+      <span class="chip">Windows 10 and 11</span>
+    </div>
+  </div>
+  <svg class="win" style="position:absolute; left:958px; top:38px; width:52px; height:52px; filter:drop-shadow(0 0 14px rgba(120,160,255,.55))" viewBox="0 0 52 52" aria-label="Windows"><defs><linearGradient id="w" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7fb2ff"/><stop offset="1" stop-color="#4b8dff"/></linearGradient></defs><rect x="2" y="2" width="22.5" height="22.5" rx="2" fill="url(#w)"/><rect x="27.5" y="2" width="22.5" height="22.5" rx="2" fill="url(#w)"/><rect x="2" y="27.5" width="22.5" height="22.5" rx="2" fill="url(#w)"/><rect x="27.5" y="27.5" width="22.5" height="22.5" rx="2" fill="url(#w)"/></svg>
+</div>
+
+<div class="banner mobile">
+  <div class="glow" style="left:120px; top:-60px; width:340px; height:180px; background:rgba(60,130,255,.45)"></div>
+  <div class="glow" style="left:600px; top:10px; width:380px; height:180px; background:rgba(150,110,255,.42)"></div>
+  <div class="grid"></div>
+  <svg class="ink" viewBox="0 0 1080 128" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M90 92 C 130 66, 160 110, 196 84" stroke="#ff5fa2" stroke-width="3.4" opacity=".85"/>
+    <path d="M112 44 c 14 -10, 28 10, 44 -2" stroke="#4b8dff" stroke-width="2.8" opacity=".75"/>
+    <path d="M884 40 q 20 -16 40 0 t 40 0" stroke="#ff9f43" stroke-width="2.8" opacity=".75"/>
+    <path d="M898 90 c 14 -10, 30 10, 46 -2" stroke="#2ecc8f" stroke-width="2.8" opacity=".8"/>
+    <path d="M226 30 l8 0 M230 26 l0 8" stroke="#ffd166" stroke-width="2.4" opacity=".85"/>
+    <path d="M846 70 l9 0 M850.5 65.5 l0 9" stroke="#ff5fa2" stroke-width="2.4" opacity=".85"/>
+  </svg>
+  <div class="text" style="left:0; right:0; align-items:center; text-align:center">
+    <div class="claim" style="font-size:38px">Handwritten notes, <span class="grad">for Windows.</span></div>
+  </div>
+</div>
+</body>
+</html>
