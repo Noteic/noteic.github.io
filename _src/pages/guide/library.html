@@ -1,9 +1,9 @@
 <!--
 title: Library
-description: Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, with colors, icons, tags, favorites, search and workspaces.
+description: Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, with colors, icons, tags, favorites, search filters and workspaces.
 -->
 <h1>Library</h1>
-<p class="lead">Your notes, sorted like a binder: Subjects, Chapters and Notes, with colors, icons, tags and favorites.</p>
+<p class="lead">Your notes, sorted like a binder: Subjects, Chapters and Notes, with colors, icons, tags and favorites. Create, rename and color everything right in the list.</p>
 
 <figure>
   <img src="{{root}}assets/img/library-columns.jpg" width="1600" height="1019" alt="The library in dark mode with Subjects, Chapters and Notes with thumbnails, next to an open page." loading="lazy">
@@ -16,10 +16,11 @@ description: Organize your Noteic notes in Subjects, Chapters, Notes and sub-not
 <h2>Subjects, Chapters and Notes</h2>
 <p>A Subject (for example a course) holds Chapters (for example weeks), and Chapters hold your Notes. On disk they are simply folders and <code>.noteic</code> files in your workspace.</p>
 <ol class="steps">
-  <li>Tap <span class="ui">+</span> under <span class="ui">Subject</span> to create a Subject.</li>
-  <li>Tap <span class="ui">+</span> under <span class="ui">Chapter</span> to add a Chapter to it.</li>
-  <li>Tap <span class="ui">+</span> under <span class="ui">Note</span>, enter a name and tap <span class="ui">Create</span>.</li>
+  <li>Tap <span class="ui">+</span> next to <span class="ui">Subject</span> to create a Subject.</li>
+  <li>Tap <span class="ui">+</span> next to <span class="ui">Chapter</span> to add a Chapter to it.</li>
+  <li>Tap <span class="ui">+</span> next to <span class="ui">Note</span> and choose <span class="ui">Page-based document</span> or <span class="ui">Whiteboard</span>.</li>
 </ol>
+<p>A name field appears right in the list, at the place where the new item will be. Type the name and press <kbd>Enter</kbd>, or tap next to it. <kbd>Esc</kbd> cancels, and nothing is created.</p>
 <p>A tap on a note selects it. To open it, right-click or press and hold the note and choose <span class="ui">Open in new tab</span>, <span class="ui">Open in background tab</span> or <span class="ui">Open in new window</span>.</p>
 
 <h2>The note menu</h2>
@@ -29,15 +30,24 @@ description: Organize your Noteic notes in Subjects, Chapters, Notes and sub-not
   <li><span class="ui">Make sub-note of …</span>: tucks a note under the one above it. <span class="ui">Make main Note</span> undoes it.</li>
   <li><span class="ui">Show in Explorer</span> and <span class="ui">Move to Recycle Bin</span></li>
 </ul>
-<p>Subjects and Chapters have <span class="ui">Color</span> (24 colors or your own), and Subjects an <span class="ui">Icon</span> (70 to choose from). Chapters also offer <span class="ui">Import PDF…</span>.</p>
+<p><span class="ui">Rename</span> turns the row into a name field. You can also press <kbd>F2</kbd> to rename the item you tapped last.</p>
+<p>Subjects and Chapters have <span class="ui">Color</span> and Subjects an <span class="ui">Icon</span>, 140 icons sorted by field of study. <span class="ui">Color</span> opens 16 color fields right under the row: tap one to use it, tap it again to change it, or choose <span class="ui">No color</span>. Subjects, Chapters and tags each keep their own 16 colors. Chapters also offer <span class="ui">Import PDF…</span>.</p>
 <p>Drag the handle next to a row to put notes, Chapters and Subjects in your own order. Deleted items go to the Windows Recycle Bin, so you can restore them from there.</p>
 
-<h2>Search, recent, favorites and tags</h2>
+<h2>Search and filters</h2>
+<p>Tap <span class="ui">Search</span> on the left and type. Search finds Notes and Chapters in the whole workspace by name and marks the match in yellow.</p>
+<p>Below the search field, three filters narrow the list, with or without text:</p>
 <ul>
-  <li><strong>Search</strong> finds Notes, Chapters and Subjects in the whole workspace by name.</li>
+  <li><span class="ui">All</span> or <span class="ui">Favorites</span>.</li>
+  <li><span class="ui">All subjects</span> or one Subject.</li>
+  <li><span class="ui">All tags</span> or one tag.</li>
+</ul>
+
+<h2>Recent, favorites and tags</h2>
+<ul>
   <li><strong>Recently opened</strong> lists your last 20 notes.</li>
   <li><strong>Favorites</strong> lists the notes you starred.</li>
-  <li><strong>Tags:</strong> create tags with a name and one of eight colors in the tags view, then give them to notes with <span class="ui">Assign Tags</span>. Tap a tag to see its notes.</li>
+  <li><strong>Tags:</strong> in the tags view, tap <span class="ui">+</span> to add a tag. It gets the next free of 16 colors. Give tags to notes with <span class="ui">Assign Tags</span>, and tap a tag to see its notes. Right-click or press and hold a tag for <span class="ui">Rename</span>, <span class="ui">Color</span> and <span class="ui">Delete</span>.</li>
 </ul>
 
 <h2>Workspaces</h2>

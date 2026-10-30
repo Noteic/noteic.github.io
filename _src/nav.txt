@@ -11,9 +11,11 @@ Shapes | guide/shapes
 Ruler and protractor | guide/ruler-and-protractor
 Text, formulas and tables | guide/text
 Memo tape | guide/memo-tape
+Stickers | guide/stickers
 Links | guide/links
 Handwriting to text | guide/handwriting-to-text
 Pages and paper | guide/pages-and-paper
+Whiteboard | guide/whiteboard
 PDF | guide/pdf
 Library | guide/library
 Tabs and windows | guide/tabs-and-windows

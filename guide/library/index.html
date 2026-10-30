@@ -4,22 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Library &#183; Noteic</title>
-<meta name="description" content="Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, with colors, icons, tags, favorites, search and workspaces.">
+<meta name="description" content="Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, with colors, icons, tags, favorites, search filters and workspaces.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/library/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Library &#183; Noteic">
-<meta property="og:description" content="Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, with colors, icons, tags, favorites, search and workspaces.">
+<meta property="og:description" content="Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, with colors, icons, tags, favorites, search filters and workspaces.">
 <meta property="og:url" content="https://noteic.github.io/guide/library/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090b11" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/noteic-32.png">
 <link rel="apple-touch-icon" href="../../assets/img/noteic-180.png">
-<link rel="stylesheet" href="../../assets/site.css?v=5613f713">
+<link rel="stylesheet" href="../../assets/site.css?v=57b72942">
 <script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("noteic-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../../assets/site.js?v=5613f713" defer></script>
+<script src="../../assets/site.js?v=57b72942" defer></script>
 </head>
 <body class="docs" data-root="../../" data-index="">
 <a class="skip" href="#main">Skip to content</a>
@@ -71,9 +71,11 @@
         <li><a href="../../guide/ruler-and-protractor/">Ruler and protractor</a></li>
         <li><a href="../../guide/text/">Text, formulas and tables</a></li>
         <li><a href="../../guide/memo-tape/">Memo tape</a></li>
+        <li><a href="../../guide/stickers/">Stickers</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
         <li><a href="../../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../../guide/pdf/">PDF</a></li>
         <li><a href="../../guide/library/" aria-current="page">Library</a></li>
         <li><a href="../../guide/tabs-and-windows/">Tabs and windows</a></li>
@@ -89,7 +91,7 @@
   <main class="content" id="main">
     <article>
 <h1>Library</h1>
-<p class="lead">Your notes, sorted like a binder: Subjects, Chapters and Notes, with colors, icons, tags and favorites.</p>
+<p class="lead">Your notes, sorted like a binder: Subjects, Chapters and Notes, with colors, icons, tags and favorites. Create, rename and color everything right in the list.</p>
 
 <figure>
   <img src="../../assets/img/library-columns.jpg" width="1600" height="1019" alt="The library in dark mode with Subjects, Chapters and Notes with thumbnails, next to an open page." loading="lazy">
@@ -102,10 +104,11 @@
 <h2 id="subjects-chapters-and-notes">Subjects, Chapters and Notes<a class="headerlink" href="#subjects-chapters-and-notes" aria-label="Link to this section">#</a></h2>
 <p>A Subject (for example a course) holds Chapters (for example weeks), and Chapters hold your Notes. On disk they are simply folders and <code>.noteic</code> files in your workspace.</p>
 <ol class="steps">
-  <li>Tap <span class="ui">+</span> under <span class="ui">Subject</span> to create a Subject.</li>
-  <li>Tap <span class="ui">+</span> under <span class="ui">Chapter</span> to add a Chapter to it.</li>
-  <li>Tap <span class="ui">+</span> under <span class="ui">Note</span>, enter a name and tap <span class="ui">Create</span>.</li>
+  <li>Tap <span class="ui">+</span> next to <span class="ui">Subject</span> to create a Subject.</li>
+  <li>Tap <span class="ui">+</span> next to <span class="ui">Chapter</span> to add a Chapter to it.</li>
+  <li>Tap <span class="ui">+</span> next to <span class="ui">Note</span> and choose <span class="ui">Page-based document</span> or <span class="ui">Whiteboard</span>.</li>
 </ol>
+<p>A name field appears right in the list, at the place where the new item will be. Type the name and press <kbd>Enter</kbd>, or tap next to it. <kbd>Esc</kbd> cancels, and nothing is created.</p>
 <p>A tap on a note selects it. To open it, right-click or press and hold the note and choose <span class="ui">Open in new tab</span>, <span class="ui">Open in background tab</span> or <span class="ui">Open in new window</span>.</p>
 
 <h2 id="the-note-menu">The note menu<a class="headerlink" href="#the-note-menu" aria-label="Link to this section">#</a></h2>
@@ -115,15 +118,24 @@
   <li><span class="ui">Make sub-note of …</span>: tucks a note under the one above it. <span class="ui">Make main Note</span> undoes it.</li>
   <li><span class="ui">Show in Explorer</span> and <span class="ui">Move to Recycle Bin</span></li>
 </ul>
-<p>Subjects and Chapters have <span class="ui">Color</span> (24 colors or your own), and Subjects an <span class="ui">Icon</span> (70 to choose from). Chapters also offer <span class="ui">Import PDF…</span>.</p>
+<p><span class="ui">Rename</span> turns the row into a name field. You can also press <kbd>F2</kbd> to rename the item you tapped last.</p>
+<p>Subjects and Chapters have <span class="ui">Color</span> and Subjects an <span class="ui">Icon</span>, 140 icons sorted by field of study. <span class="ui">Color</span> opens 16 color fields right under the row: tap one to use it, tap it again to change it, or choose <span class="ui">No color</span>. Subjects, Chapters and tags each keep their own 16 colors. Chapters also offer <span class="ui">Import PDF…</span>.</p>
 <p>Drag the handle next to a row to put notes, Chapters and Subjects in your own order. Deleted items go to the Windows Recycle Bin, so you can restore them from there.</p>
 
-<h2 id="search-recent-favorites-and-tags">Search, recent, favorites and tags<a class="headerlink" href="#search-recent-favorites-and-tags" aria-label="Link to this section">#</a></h2>
+<h2 id="search-and-filters">Search and filters<a class="headerlink" href="#search-and-filters" aria-label="Link to this section">#</a></h2>
+<p>Tap <span class="ui">Search</span> on the left and type. Search finds Notes and Chapters in the whole workspace by name and marks the match in yellow.</p>
+<p>Below the search field, three filters narrow the list, with or without text:</p>
 <ul>
-  <li><strong>Search</strong> finds Notes, Chapters and Subjects in the whole workspace by name.</li>
+  <li><span class="ui">All</span> or <span class="ui">Favorites</span>.</li>
+  <li><span class="ui">All subjects</span> or one Subject.</li>
+  <li><span class="ui">All tags</span> or one tag.</li>
+</ul>
+
+<h2 id="recent-favorites-and-tags">Recent, favorites and tags<a class="headerlink" href="#recent-favorites-and-tags" aria-label="Link to this section">#</a></h2>
+<ul>
   <li><strong>Recently opened</strong> lists your last 20 notes.</li>
   <li><strong>Favorites</strong> lists the notes you starred.</li>
-  <li><strong>Tags:</strong> create tags with a name and one of eight colors in the tags view, then give them to notes with <span class="ui">Assign Tags</span>. Tap a tag to see its notes.</li>
+  <li><strong>Tags:</strong> in the tags view, tap <span class="ui">+</span> to add a tag. It gets the next free of 16 colors. Give tags to notes with <span class="ui">Assign Tags</span>, and tap a tag to see its notes. Right-click or press and hold a tag for <span class="ui">Rename</span>, <span class="ui">Color</span> and <span class="ui">Delete</span>.</li>
 </ul>
 
 <h2 id="workspaces">Workspaces<a class="headerlink" href="#workspaces" aria-label="Link to this section">#</a></h2>
@@ -152,7 +164,8 @@
       <li><a href="#open-the-library">Open the library</a></li>
       <li><a href="#subjects-chapters-and-notes">Subjects, Chapters and Notes</a></li>
       <li><a href="#the-note-menu">The note menu</a></li>
-      <li><a href="#search-recent-favorites-and-tags">Search, recent, favorites and tags</a></li>
+      <li><a href="#search-and-filters">Search and filters</a></li>
+      <li><a href="#recent-favorites-and-tags">Recent, favorites and tags</a></li>
       <li><a href="#workspaces">Workspaces</a></li>
     </ul>
   </aside>
@@ -163,7 +176,7 @@
     <div class="foot-cols">
       <div>
         <a class="brand" href="../../"><img src="../../assets/img/noteic-64.png" width="32" height="32" alt="">Noteic</a>
-        <p>Handwritten notes on real pages, for Windows.<br>Free in the Microsoft Store.</p>
+        <p>Handwritten notes on real pages or a whiteboard, for Windows.<br>Free in the Microsoft Store.</p>
       </div>
       <div>
         <h2>Noteic</h2>
@@ -178,6 +191,7 @@
         <ul>
           <li><a href="../../guide/">Getting started</a></li>
           <li><a href="../../guide/pens/">Pens</a></li>
+          <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
           <li><a href="../../guide/pdf/">PDF</a></li>
           <li><a href="../../guide/library/">Library</a></li>
         </ul>

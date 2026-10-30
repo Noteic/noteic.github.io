@@ -4,22 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shapes &#183; Noteic</title>
-<meta name="description" content="Draw clean lines, arrows, rectangles, stars, speech bubbles and more in Noteic, with fill, line styles, grid snapping and shape recognition.">
+<meta name="description" content="Draw clean lines, arrows, 3D shapes, block arrows, stars, speech bubbles and more in Noteic, with fill, line styles, your own colors, grid snapping and shape recognition.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/shapes/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Shapes &#183; Noteic">
-<meta property="og:description" content="Draw clean lines, arrows, rectangles, stars, speech bubbles and more in Noteic, with fill, line styles, grid snapping and shape recognition.">
+<meta property="og:description" content="Draw clean lines, arrows, 3D shapes, block arrows, stars, speech bubbles and more in Noteic, with fill, line styles, your own colors, grid snapping and shape recognition.">
 <meta property="og:url" content="https://noteic.github.io/guide/shapes/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090b11" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/noteic-32.png">
 <link rel="apple-touch-icon" href="../../assets/img/noteic-180.png">
-<link rel="stylesheet" href="../../assets/site.css?v=5613f713">
+<link rel="stylesheet" href="../../assets/site.css?v=57b72942">
 <script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("noteic-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../../assets/site.js?v=5613f713" defer></script>
+<script src="../../assets/site.js?v=57b72942" defer></script>
 </head>
 <body class="docs" data-root="../../" data-index="">
 <a class="skip" href="#main">Skip to content</a>
@@ -71,9 +71,11 @@
         <li><a href="../../guide/ruler-and-protractor/">Ruler and protractor</a></li>
         <li><a href="../../guide/text/">Text, formulas and tables</a></li>
         <li><a href="../../guide/memo-tape/">Memo tape</a></li>
+        <li><a href="../../guide/stickers/">Stickers</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
         <li><a href="../../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../../guide/pdf/">PDF</a></li>
         <li><a href="../../guide/library/">Library</a></li>
         <li><a href="../../guide/tabs-and-windows/">Tabs and windows</a></li>
@@ -89,10 +91,10 @@
   <main class="content" id="main">
     <article>
 <h1>Shapes</h1>
-<p class="lead">More than 30 shapes, from lines and arrows to stars and speech bubbles. Or sketch by hand and let Noteic recognize the shape.</p>
+<p class="lead">45 shapes, from lines and arrows to 3D shapes and speech bubbles. Or sketch by hand and let Noteic recognize the shape.</p>
 
 <figure>
-  <img src="../../assets/img/shapes-menu.jpg" width="1600" height="1012" alt="The shapes menu open next to a page with lines in several styles, a filled speech bubble, a star and the protractor." loading="lazy">
+  <img src="../../assets/img/shapes-3d.jpg" width="1525" height="1450" alt="Handwritten “New shapes!!!” above a number line, a block double arrow, a block arrow, a cube, a cylinder, a sphere, a cone, a pyramid and a prism on grid paper." loading="lazy">
 </figure>
 
 <h2 id="draw-a-shape">Draw a shape<a class="headerlink" href="#draw-a-shape" aria-label="Link to this section">#</a></h2>
@@ -105,11 +107,15 @@
 
 <h2 id="all-shapes">All shapes<a class="headerlink" href="#all-shapes" aria-label="Link to this section">#</a></h2>
 <ul>
-  <li><strong>Lines:</strong> line, arrow, double arrow, curved arrow, curved double arrow, angle and axes.</li>
+  <li><strong>Lines:</strong> line, arrow, double arrow, curved arrow, curved double arrow, each arrow also with solid heads, angle and axes.</li>
   <li><strong>Brackets:</strong> curly, round and square, as one bracket or as a pair around the area you drag.</li>
-  <li><strong>Areas:</strong> rectangle, rounded rectangle, capsule, ellipse, triangle, rounded triangle, right triangle, diamond, parallelogram, isosceles trapezoid, pentagon, hexagon, octagon, star and heart.</li>
+  <li><strong>Number line</strong> with a tick every 5 mm.</li>
+  <li><strong>Areas:</strong> rectangle, rounded rectangle, capsule, ellipse, triangle, rounded triangle, right triangle, diamond, parallelogram, isosceles trapezoid, pentagon, hexagon, heptagon, octagon, star and heart.</li>
+  <li><strong>Block arrows:</strong> a block arrow that points left or right as you drag, and a block double arrow.</li>
   <li><strong>Callouts:</strong> square and rounded speech bubble, and a wavy frame.</li>
+  <li><strong>3D shapes:</strong> cube, cylinder, sphere, cone, pyramid and prism, with the hidden edges dashed.</li>
 </ul>
+<p>The solid-head arrows, the number line, the heptagon, the block arrows and the 3D shapes came with Noteic 1.5.</p>
 
 <h2 id="drawing-modes">Drawing modes<a class="headerlink" href="#drawing-modes" aria-label="Link to this section">#</a></h2>
 <p>The top row of the menu changes how you draw:</p>
@@ -123,14 +129,18 @@
 
 <h2 id="line-fill-and-color">Line, fill and color<a class="headerlink" href="#line-fill-and-color" aria-label="Link to this section">#</a></h2>
 <ul>
-  <li><span class="ui">Line</span>: width from 0.1 to 2 mm.</li>
+  <li><span class="ui">Line</span>: width from 0.1 to 2 mm, or one tap on <span class="ui">Thin lines</span> (0.25 mm), <span class="ui">Normal lines</span> (0.5 mm) or <span class="ui">Bold lines</span> (1 mm).</li>
   <li>Seven line styles: <span class="ui">Solid</span>, <span class="ui">Dashed</span>, <span class="ui">Long dashes</span>, <span class="ui">Dotted</span>, <span class="ui">Dash-dot</span>, <span class="ui">Wavy</span> and <span class="ui">Zigzag</span>.</li>
   <li><span class="ui">Fill</span>: fills closed shapes. Switch between <span class="ui">Outline</span> and <span class="ui">Fill</span> to give each its own color, and set the fill opacity from 5% to 100%.</li>
-  <li>20 colors, plus a custom color picker with a <span class="ui">Hex</span> box.</li>
+  <li>20 color fields you can change: tap a field to use it, tap it again to change it. The last field adds your own color.</li>
+  <li>The palette button opens a custom color picker with a <span class="ui">Hex</span> box.</li>
 </ul>
 
 <h2 id="change-a-shape-later">Change a shape later<a class="headerlink" href="#change-a-shape-later" aria-label="Link to this section">#</a></h2>
-<p>Select it with the <a href="../../guide/selection/">lasso</a>. Drag the frame to move, scale or rotate it, drag its point dots to reshape it, and use <span class="ui">Style</span> in the selection bar to change width, line style, fill and color.</p>
+<p>Select it with the <a href="../../guide/selection/">lasso</a>. Drag the frame to move, scale or rotate it, drag its point dots to reshape it, and use <span class="ui">Style</span> in the selection bar to change width, line style, fill and color. See <a href="../../guide/selection/#style-and-color">Style and color</a>.</p>
+<figure>
+  <img src="../../assets/img/new-1-5-shapes-colors.jpg" width="1600" height="900" alt="New shapes in Noteic 1.5 next to a row of color fields: tap a field again to make it your own." loading="lazy">
+</figure>
 
 <figure>
   <video controls preload="none" playsinline width="1600" height="1014" poster="../../assets/video/shape-recognition.jpg">
@@ -161,7 +171,7 @@
     <div class="foot-cols">
       <div>
         <a class="brand" href="../../"><img src="../../assets/img/noteic-64.png" width="32" height="32" alt="">Noteic</a>
-        <p>Handwritten notes on real pages, for Windows.<br>Free in the Microsoft Store.</p>
+        <p>Handwritten notes on real pages or a whiteboard, for Windows.<br>Free in the Microsoft Store.</p>
       </div>
       <div>
         <h2>Noteic</h2>
@@ -176,6 +186,7 @@
         <ul>
           <li><a href="../../guide/">Getting started</a></li>
           <li><a href="../../guide/pens/">Pens</a></li>
+          <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
           <li><a href="../../guide/pdf/">PDF</a></li>
           <li><a href="../../guide/library/">Library</a></li>
         </ul>

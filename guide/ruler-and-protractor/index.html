@@ -4,22 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ruler and protractor &#183; Noteic</title>
-<meta name="description" content="Draw straight lines along the ruler and arcs with the protractor in Noteic, with real millimeters and a live angle display.">
+<meta name="description" content="Draw straight lines along the ruler and arcs with the protractor in Noteic, with a scale in centimeters or inches and a live angle display.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/ruler-and-protractor/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Ruler and protractor &#183; Noteic">
-<meta property="og:description" content="Draw straight lines along the ruler and arcs with the protractor in Noteic, with real millimeters and a live angle display.">
+<meta property="og:description" content="Draw straight lines along the ruler and arcs with the protractor in Noteic, with a scale in centimeters or inches and a live angle display.">
 <meta property="og:url" content="https://noteic.github.io/guide/ruler-and-protractor/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090b11" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/noteic-32.png">
 <link rel="apple-touch-icon" href="../../assets/img/noteic-180.png">
-<link rel="stylesheet" href="../../assets/site.css?v=5613f713">
+<link rel="stylesheet" href="../../assets/site.css?v=57b72942">
 <script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("noteic-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../../assets/site.js?v=5613f713" defer></script>
+<script src="../../assets/site.js?v=57b72942" defer></script>
 </head>
 <body class="docs" data-root="../../" data-index="">
 <a class="skip" href="#main">Skip to content</a>
@@ -71,9 +71,11 @@
         <li><a href="../../guide/ruler-and-protractor/" aria-current="page">Ruler and protractor</a></li>
         <li><a href="../../guide/text/">Text, formulas and tables</a></li>
         <li><a href="../../guide/memo-tape/">Memo tape</a></li>
+        <li><a href="../../guide/stickers/">Stickers</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
         <li><a href="../../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../../guide/pdf/">PDF</a></li>
         <li><a href="../../guide/library/">Library</a></li>
         <li><a href="../../guide/tabs-and-windows/">Tabs and windows</a></li>
@@ -98,7 +100,7 @@
 <h2 id="show-the-ruler-or-protractor">Show the ruler or protractor<a class="headerlink" href="#show-the-ruler-or-protractor" aria-label="Link to this section">#</a></h2>
 <ul>
   <li>Tap <span class="ui">Ruler</span> in the toolbar, or press <kbd>Ctrl</kbd>+<kbd>L</kbd>. Tap again to hide it.</li>
-  <li>Press and hold the button to choose <span class="ui">Ruler</span> or <span class="ui">Protractor</span>. Only one is shown at a time.</li>
+  <li>Press and hold the button to open its menu. Tap <span class="ui">Ruler</span> or <span class="ui">Protractor</span> and it appears right away. Only one is shown at a time.</li>
 </ul>
 
 <h2 id="ruler">Ruler<a class="headerlink" href="#ruler" aria-label="Link to this section">#</a></h2>
@@ -108,7 +110,15 @@
   <li><strong>Turn:</strong> drag the round arrow. The angle shows in the middle of the ruler.</li>
   <li><strong>Length:</strong> drag the arrows at both ends.</li>
 </ul>
-<p>The scale shows real millimeters at the current zoom, labeled in centimeters.</p>
+<p>The scale shows real sizes at the current zoom, in centimeters or inches.</p>
+
+<h2 id="units">Units<a class="headerlink" href="#units" aria-label="Link to this section">#</a></h2>
+<p>Press and hold the ruler button. Under <span class="ui">Units</span>, choose <span class="ui">cm</span> or <span class="ui">in</span>:</p>
+<ul>
+  <li><span class="ui">cm</span>: centimeters and millimeters.</li>
+  <li><span class="ui">in</span>: inches, down to 1/16 inch, with a number at every inch. Both edges of the ruler change.</li>
+</ul>
+<p>The change shows at once, in every open Noteic window, and is saved. Until you choose, Noteic follows your Windows region: inches where the region does not use the metric system, centimeters everywhere else. When you zoom far out, the finest marks are left out so the scale stays readable. The protractor always measures in degrees.</p>
 
 <h2 id="protractor">Protractor<a class="headerlink" href="#protractor" aria-label="Link to this section">#</a></h2>
 <ul>
@@ -135,6 +145,7 @@
     <ul>
       <li><a href="#show-the-ruler-or-protractor">Show the ruler or protractor</a></li>
       <li><a href="#ruler">Ruler</a></li>
+      <li><a href="#units">Units</a></li>
       <li><a href="#protractor">Protractor</a></li>
     </ul>
   </aside>
@@ -145,7 +156,7 @@
     <div class="foot-cols">
       <div>
         <a class="brand" href="../../"><img src="../../assets/img/noteic-64.png" width="32" height="32" alt="">Noteic</a>
-        <p>Handwritten notes on real pages, for Windows.<br>Free in the Microsoft Store.</p>
+        <p>Handwritten notes on real pages or a whiteboard, for Windows.<br>Free in the Microsoft Store.</p>
       </div>
       <div>
         <h2>Noteic</h2>
@@ -160,6 +171,7 @@
         <ul>
           <li><a href="../../guide/">Getting started</a></li>
           <li><a href="../../guide/pens/">Pens</a></li>
+          <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
           <li><a href="../../guide/pdf/">PDF</a></li>
           <li><a href="../../guide/library/">Library</a></li>
         </ul>

@@ -16,9 +16,11 @@ guide/selection/index.html
 guide/settings/index.html
 guide/shapes/index.html
 guide/shortcuts/index.html
+guide/stickers/index.html
 guide/tabs-and-windows/index.html
 guide/text/index.html
 guide/toolbar/index.html
+guide/whiteboard/index.html
 index.html
 privacy/index.html
 support/index.html

@@ -1,7 +1,7 @@
 <!--
 title: Home
 pagetitle: Noteic – handwritten notes for Windows
-description: Noteic is a free notebook for Windows, made for writing by hand: fast, pressure-sensitive ink on real pages, with no account and no subscription.
+description: Noteic is a free notebook for Windows, made for writing by hand: fast, pressure-sensitive ink on real pages or on a whiteboard, with no account and no subscription.
 layout: landing
 -->
 <script type="application/ld+json">
@@ -19,14 +19,28 @@ layout: landing
       "@type": "SoftwareApplication",
       "@id": "https://noteic.github.io/#app",
       "name": "Noteic",
-      "description": "A notebook for Windows, made for writing by hand: fast, pressure-sensitive ink on real pages, PDF annotation, shapes, ruler and protractor, text with LaTeX formulas, memo tape and handwriting to text.",
+      "description": "A notebook for Windows, made for writing by hand: fast, pressure-sensitive ink on real pages or on a whiteboard that grows as you write, PDF annotation, shapes, ruler and protractor, text with LaTeX formulas, stickers, memo tape and handwriting to text.",
       "url": "https://noteic.github.io/",
       "image": "https://noteic.github.io/assets/img/two-windows.jpg",
       "screenshot": "https://noteic.github.io/assets/img/two-windows.jpg",
       "applicationCategory": "ProductivityApplication",
       "operatingSystem": "Windows 10 version 2004 or later, Windows 11",
       "processorRequirements": "ARM64 or x64",
-      "softwareVersion": "1.4",
+      "softwareVersion": "1.5.1",
+      "featureList": [
+        "Whiteboard: one page that grows on all four sides as you write, up to about 10.3 × 21.2 m",
+        "Low-latency, pressure-sensitive ink with no re-sharpening when you lift the pen",
+        "Ballpoint, fountain pen, calligraphy pen and highlighter",
+        "Stickers: save a selection and place it again in any note or whiteboard",
+        "Handwriting to text with the Windows handwriting recognition, on the device",
+        "45 shapes, including 3D shapes and block arrows, with shape recognition",
+        "Ruler in centimeters or inches, and a protractor",
+        "Write on imported PDFs and export as PDF",
+        "Text boxes, tables and LaTeX formulas",
+        "Memo tape: cover answers and tap to reveal them",
+        "Library with subjects, chapters, tags, favorites and search filters",
+        "Light and dark mode with nine accent colors"
+      ],
       "installUrl": "https://apps.microsoft.com/detail/9n8bpds8hvlw",
       "downloadUrl": "https://apps.microsoft.com/detail/9n8bpds8hvlw",
       "author": { "@type": "Person", "name": "Stefan Bogdanovic" },
@@ -38,9 +52,9 @@ layout: landing
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
   <div class="wrap">
-    <a class="eyebrow-link reveal" href="{{link:whats-new}}"><b>New in 1.4</b>Handwriting to text, your own toolbar and new paper</a>
+    <a class="eyebrow-link reveal" href="{{link:whats-new}}"><b>New in 1.5.1</b>Stickers, Insert space and your toolbar colors</a>
     <h1 class="reveal" style="--d:1">Handwritten notes, with ink that <span class="grad">keeps up with your pen</span>.</h1>
-    <p class="lead reveal" style="--d:2">Noteic is a free notebook for Windows, made for the Surface Pen and other Windows pens. Real pages, no account, no subscription.</p>
+    <p class="lead reveal" style="--d:2">Noteic is a free notebook for Windows, made for the Surface Pen and other Windows pens. Real pages or a whiteboard, no account, no subscription.</p>
     <div class="actions reveal" style="--d:3">
       <a class="pill pill-brand big" href="https://apps.microsoft.com/detail/9n8bpds8hvlw">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
@@ -65,9 +79,9 @@ layout: landing
     <span class="chip c4"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6Z"/></svg></i>Works offline</span>
   </div>
   <ul class="stats reveal">
-    <li><b>31</b><span>shapes</span></li>
+    <li><b>45</b><span>shapes</span></li>
     <li><b>10</b><span>paper styles</span></li>
-    <li><b>7</b><span>accent colors</span></li>
+    <li><b>9</b><span>accent colors</span></li>
     <li><b>0</b><span>accounts needed</span></li>
   </ul>
 </section>
@@ -75,28 +89,90 @@ layout: landing
 <section class="section alt">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="kicker">New in 1.4</span>
-      <h2>Three big updates</h2>
-      <p>Turn handwriting into text, build your own toolbar and write on new paper.</p>
+      <span class="kicker">New in 1.5.1</span>
+      <h2>Stickers, more room and <span class="grad">your colors</span></h2>
+      <p>Save anything you wrote as a sticker, make room on the whiteboard, recolor with your toolbar colors and switch tools with your pen.</p>
+    </div>
+    <div class="bento new14 duo">
+      <a class="tile reveal" href="{{link:guide/stickers}}">
+        <img src="{{root}}assets/img/new-1-5-1-stickers.jpg" width="1280" height="720" alt="The Stickers panel next to handwritten notes on photosynthesis, with the Stickers button in the toolbar and Save as sticker in the selection bar." loading="lazy">
+        <div><h3>Stickers</h3><p>Save any selection as a sticker and place it again in any note or whiteboard, with a tap or by dragging it.</p><span class="more">How it works</span></div>
+      </a>
+      <a class="tile reveal" style="--d:1" href="{{link:guide/whiteboard#insert-space}}">
+        <img src="{{root}}assets/img/new-1-5-1-insert-space.jpg" width="1280" height="720" alt="Insert space in the lasso menu of a whiteboard, and a blue band that pushes the notes below the line down." loading="lazy">
+        <div><h3>Insert space</h3><p>Make room on the whiteboard: drag down or right, and everything after the line moves along.</p><span class="more">How it works</span></div>
+      </a>
+      <a class="tile reveal" href="{{link:guide/selection#style-and-color}}">
+        <img src="{{root}}assets/img/new-1-5-1-selection-colors.jpg" width="1280" height="720" alt="A handwritten formula selected with the lasso, and the compact Style field with the colors of the toolbar." loading="lazy">
+        <div><h3>Recolor with your toolbar colors</h3><p>Tap Style in the selection bar and pick one of your toolbar colors. Tap it again to change that color.</p><span class="more">How it works</span></div>
+      </a>
+      <a class="tile reveal" style="--d:1" href="{{link:guide/settings#pen-and-ink}}">
+        <img src="{{root}}assets/img/new-1-5-1-pen-side-button.jpg" width="1280" height="720" alt="The More menu with Settings, and the Pen side button setting with Off, Lasso and Eraser." loading="lazy">
+        <div><h3>Pen side button</h3><p>Hold the side button of your pen to select with the lasso or to erase, without picking another tool.</p><span class="more">How it works</span></div>
+      </a>
+    </div>
+    <div class="also reveal">
+      <h3>Also in 1.5.1</h3>
+      <ul>
+        <li><a href="{{link:guide/ruler-and-protractor#units}}">Ruler in cm or inches</a></li>
+        <li><a href="{{link:guide/library#search-and-filters}}">Search filters for subject, tag and favorites</a></li>
+        <li><a href="{{link:guide/pdf#images}}">Images in new notes before saving</a></li>
+        <li><a href="{{link:guide#zoom}}">Lock scrolling and Stop at edge</a></li>
+        <li><a href="{{link:guide/pens#choose-a-pen}}">Stroke previews in the pen menus</a></li>
+        <li><a href="{{link:guide/settings#appearance}}">Indigo and gold, and a darker toolbar in dark mode</a></li>
+        <li><a href="{{link:guide/library#subjects-chapters-and-notes}}">70 new subject icons</a></li>
+      </ul>
+      <a class="more" href="{{link:whats-new}}">All changes</a>
+    </div>
+  </div>
+</section>
+
+<section class="wb" id="whiteboard">
+  <div class="wrap">
+    <span class="soon reveal"><span class="dot" aria-hidden="true"></span>New in 1.5</span>
+    <h2 class="reveal" style="--d:1">Whiteboard. <span class="grad">Room for every idea.</span></h2>
+    <p class="reveal" style="--d:2">One page that grows on all four sides as you write, up to about 10.3 × 21.2 m. With the same pens, shapes, text boxes, images and stickers as your notes.</p>
+    <div class="wb-frame reveal" style="--d:3">
+      <img src="{{root}}assets/img/whiteboard-mind-map.jpg" width="1600" height="947" alt="A whiteboard in Noteic with a handwritten mind map: Topic in the middle, connected to seven idea boxes in different colors." loading="lazy">
+    </div>
+    <ul class="wb-points reveal" style="--d:4">
+      <li>Grows on all four sides</li>
+      <li>Double-tap to see everything</li>
+      <li>Insert space to make room</li>
+      <li>Export what you see as PDF</li>
+    </ul>
+    <div class="actions reveal" style="--d:5">
+      <a class="pill pill-light big" href="{{link:guide/whiteboard}}">How the whiteboard works</a>
+      <a class="pill pill-dark-ghost big" href="https://apps.microsoft.com/detail/9n8bpds8hvlw">Get Noteic</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">New in 1.5</span>
+      <h2>Export what you see, <span class="grad">new shapes</span> and your own colors</h2>
+      <p>Save exactly what is on screen as a PDF, draw 3D shapes and block arrows, and make every color field your own.</p>
     </div>
     <div class="bento new14">
-      <a class="tile reveal" href="{{link:guide/handwriting-to-text}}">
-        <img src="{{root}}assets/img/new-1-4-handwriting-to-text.jpg" width="1600" height="900" alt="Handwritten “I love Noteic” selected with the lasso and turned into typed text." loading="lazy">
-        <div><h3>Handwriting to text</h3><p>Select your handwriting with the lasso and tap Convert to text.</p><span class="more">How it works</span></div>
+      <a class="tile reveal" href="{{link:guide/whiteboard#export-as-pdf}}">
+        <img src="{{root}}assets/img/new-1-5-export.jpg" width="1600" height="900" alt="Export as PDF in the More menu of a whiteboard, and the six PDF types under Save as type." loading="lazy">
+        <div><h3>Export what you see</h3><p>Save the visible area of your whiteboard as a PDF on A4 or A3, or the whole whiteboard in sheets.</p><span class="more">How it works</span></div>
       </a>
-      <a class="tile reveal" style="--d:1" href="{{link:guide/toolbar}}">
-        <img src="{{root}}assets/img/new-1-4-customize-toolbar.jpg" width="1600" height="900" alt="The full toolbar above a shorter toolbar with only the tools in use." loading="lazy">
-        <div><h3>Customize your toolbar</h3><p>Keep only the tools you use. Move the rest into the drawer or hide them.</p><span class="more">How it works</span></div>
+      <a class="tile reveal" style="--d:1" href="{{link:guide/shapes}}">
+        <img src="{{root}}assets/img/new-1-5-shapes-colors.jpg" width="1600" height="900" alt="Handwritten “New shapes!!!” above a number line, block arrows and 3D shapes, next to a row of color fields." loading="lazy">
+        <div><h3>14 new shapes, your own colors</h3><p>3D shapes, block arrows and a number line, and color fields you can change for shapes, pens and highlighters.</p><span class="more">How it works</span></div>
       </a>
-      <a class="tile reveal" style="--d:2" href="{{link:guide/pages-and-paper}}">
-        <img src="{{root}}assets/img/new-1-4-paper-styles.jpg" width="1600" height="900" alt="The page menu with graph, music, writing and hexagon paper." loading="lazy">
-        <div><h3>New paper styles</h3><p>Graph, music, writing and hexagon paper, with live previews and your own colors.</p><span class="more">How it works</span></div>
+      <a class="tile reveal" style="--d:2" href="{{link:guide/library}}">
+        <img src="{{root}}assets/img/new-1-5-what-else.jpg" width="1600" height="900" alt="A list of smaller improvements in Noteic 1.5, such as creating, renaming and coloring right in the library." loading="lazy">
+        <div><h3>A tidier library</h3><p>Create, rename and color right in the list, with your own colors for subjects, chapters and tags.</p><span class="more">How it works</span></div>
       </a>
     </div>
   </div>
 </section>
 
-<section class="section" id="features">
+<section class="section alt" id="features">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="kicker">Features</span>
@@ -121,9 +197,9 @@ layout: landing
       <a class="tile span-2 tint-violet reveal" href="{{link:guide/shapes}}">
         <span class="kicker">Shapes</span>
         <h3>Clean shapes</h3>
-        <p>More than 30 shapes, shape recognition, ruler and protractor.</p>
+        <p>45 shapes, including 3D shapes, plus shape recognition, ruler and protractor.</p>
         <span class="more">Shapes</span>
-        <div class="shot-in"><img src="{{root}}assets/img/shapes-menu.jpg" width="1600" height="1012" alt="The shapes menu next to lines in several styles, a speech bubble, a star and the protractor." loading="lazy"></div>
+        <div class="shot-in"><img src="{{root}}assets/img/shapes-3d.jpg" width="1525" height="1450" alt="A number line, block arrows, a cube, a cylinder, a sphere, a cone, a pyramid and a prism on grid paper." loading="lazy"></div>
       </a>
       <a class="tile span-4 tint-teal reveal" style="--d:1" href="{{link:guide/pdf}}">
         <span class="kicker">PDF</span>
@@ -142,32 +218,10 @@ layout: landing
       <a class="tile span-3 tint-slate reveal" style="--d:1" href="{{link:guide/library}}">
         <span class="kicker">Organize</span>
         <h3>A library for your semester</h3>
-        <p>Subjects, chapters, notes and sub-notes, with colors, icons, tags and favorites. One workspace per semester.</p>
+        <p>Subjects, chapters, notes and sub-notes, with colors, icons, tags, favorites and search filters. One workspace per semester.</p>
         <span class="more">Library</span>
         <div class="shot-in"><img src="{{root}}assets/img/library-columns.jpg" width="1600" height="1019" alt="The library in dark mode with subjects, chapters and notes with thumbnails." loading="lazy"></div>
       </a>
-    </div>
-  </div>
-</section>
-
-<section class="wb" id="whiteboard">
-  <div class="wrap">
-    <span class="soon reveal"><span class="dot" aria-hidden="true"></span>Coming soon</span>
-    <h2 class="reveal" style="--d:1">Whiteboard. <span class="grad">Room for every idea.</span></h2>
-    <p class="reveal" style="--d:2">An infinite canvas is on its way to Noteic. Write, zoom out to see the big picture, and keep going wherever there is space.</p>
-    <div class="wb-frame reveal" style="--d:3">
-      <video data-autoplay loop muted playsinline preload="none" width="1600" height="1014" poster="{{root}}assets/video/whiteboard.jpg" aria-label="Preview: “Whiteboard is coming soon!” is written by hand, then the view zooms far out and more lines are drawn across the endless canvas.">
-        <source src="{{root}}assets/video/whiteboard.mp4" type="video/mp4">
-      </video>
-    </div>
-    <ul class="wb-points reveal" style="--d:4">
-      <li>An endless canvas</li>
-      <li>Zoom out for the big picture</li>
-      <li>Brainstorms, mind maps, sketches</li>
-    </ul>
-    <div class="actions reveal" style="--d:5">
-      <a class="pill pill-light big" href="https://www.reddit.com/r/Noteic/">Follow r/Noteic to hear first</a>
-      <a class="pill pill-dark-ghost big" href="https://apps.microsoft.com/detail/9n8bpds8hvlw">Get Noteic now</a>
     </div>
   </div>
 </section>
@@ -179,13 +233,17 @@ layout: landing
       <h2>Made for writing by hand</h2>
     </div>
     <ul class="mini-grid">
-      <li class="reveal"><a class="mini" href="{{link:guide/pages-and-paper}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h3>Ten paper styles</h3><p>From ruled and grid to Cornell, music and hexagon, on A6 to A3, Letter, Legal and more.</p></a></li>
+      <li class="reveal"><a class="mini" href="{{link:guide/handwriting-to-text}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15c2-5 4-7 5-4s2 4 3 1 2-5 3-2"/><path d="M15 18h6M18 15v6"/></svg></span><h3>Handwriting to text</h3><p>Select your ink with the lasso and tap Convert to text, right on your device.</p></a></li>
       <li class="reveal" style="--d:1"><a class="mini" href="{{link:guide/selection}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4c4.4 0 8 2.2 8 5s-3.6 5-8 5-8-2.2-8-5 3.6-5 8-5Z" stroke-dasharray="3 3"/><path d="M9 14c-1 2-1 4 1 6"/></svg></span><h3>Lasso selection</h3><p>Move, scale, rotate, copy and recolor, or drag onto another page.</p></a></li>
-      <li class="reveal" style="--d:2"><a class="mini" href="{{link:guide/links}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><h3>Links</h3><p>Link handwriting to a spot in your notes, and text to the web.</p></a></li>
-      <li class="reveal" style="--d:3"><a class="mini" href="{{link:guide/tabs-and-windows}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 9h18M8 5v4"/></svg></span><h3>Tabs and windows</h3><p>Open notes side by side and drag a tab out into its own window.</p></a></li>
-      <li class="reveal"><a class="mini" href="{{link:guide/settings}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor"/></svg></span><h3>Light and dark</h3><p>Follow Windows or pick a mode, with seven accent colors.</p></a></li>
-      <li class="reveal" style="--d:1"><a class="mini" href="{{link:guide/fill-and-laser}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="7" r="2.5"/><path d="M4 20c3-6 6-9 11-11.5"/></svg></span><h3>Laser pointer</h3><p>A trail that fades by itself, for presenting from your notes.</p></a></li>
-      <li class="reveal" style="--d:2"><a class="mini" href="{{link:guide/pages-and-paper}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><h3>Page overview</h3><p>All pages at a glance, with colored bookmarks and drag to reorder.</p></a></li>
+      <li class="reveal" style="--d:2"><a class="mini" href="{{link:guide/toolbar}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="8" rx="4"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></span><h3>Your own toolbar</h3><p>Keep the tools you use, move the rest into the drawer and put the toolbar on any edge.</p></a></li>
+      <li class="reveal" style="--d:3"><a class="mini" href="{{link:guide/pages-and-paper}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h3>Ten paper styles</h3><p>From ruled and grid to Cornell, music and hexagon, on A6 to A3, Letter, Legal and more.</p></a></li>
+      <li class="reveal"><a class="mini" href="{{link:guide/pages-and-paper#extend-a-page}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="5" width="8" height="14" rx="1.5"/><path d="M4 12h2M18 12h2M3 10l-1 2 1 2M21 10l1 2-1 2"/></svg></span><h3>Extend a page</h3><p>Add room next to a page or a PDF: up to 20 cm left and right, 5 cm top and bottom.</p></a></li>
+      <li class="reveal" style="--d:1"><a class="mini" href="{{link:guide/links}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><h3>Links</h3><p>Link handwriting to a spot in your notes, and text to the web.</p></a></li>
+      <li class="reveal" style="--d:2"><a class="mini" href="{{link:guide/tabs-and-windows}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 9h18M8 5v4"/></svg></span><h3>Tabs and windows</h3><p>Open notes side by side and drag a tab out or onto another window.</p></a></li>
+      <li class="reveal" style="--d:3"><a class="mini" href="{{link:guide/settings}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor"/></svg></span><h3>Light and dark</h3><p>Follow Windows or pick a mode, with nine accent colors.</p></a></li>
+      <li class="reveal"><a class="mini" href="{{link:guide/fill-and-laser}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="7" r="2.5"/><path d="M4 20c3-6 6-9 11-11.5"/></svg></span><h3>Laser pointer</h3><p>A trail that fades by itself, for presenting from your notes.</p></a></li>
+      <li class="reveal" style="--d:1"><a class="mini" href="{{link:guide/pages-and-paper#page-overview}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><h3>Page overview</h3><p>All pages at a glance, with colored bookmarks and drag to reorder.</p></a></li>
+      <li class="reveal" style="--d:2"><a class="mini" href="{{link:guide/shortcuts}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg></span><h3>Keyboard shortcuts</h3><p>Made for the pen, with shortcuts when a keyboard is attached.</p></a></li>
       <li class="reveal" style="--d:3"><a class="mini" href="{{link:guide}}"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v10"/><path d="m8 9 4 4 4-4"/><path d="M5 15v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3"/></svg></span><h3>Autosave</h3><p>Noteic saves while you write and brings your windows back.</p></a></li>
     </ul>
   </div>

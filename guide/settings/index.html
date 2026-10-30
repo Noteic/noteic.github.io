@@ -4,22 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Settings &#183; Noteic</title>
-<meta name="description" content="Noteic settings: light and dark mode, seven accent colors, toolbar position, prediction, default text font, workspace folder and paper.">
+<meta name="description" content="Noteic settings: light and dark mode, nine accent colors, ink prediction, the pen side button, the default text font, your workspace folder and paper.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/settings/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Settings &#183; Noteic">
-<meta property="og:description" content="Noteic settings: light and dark mode, seven accent colors, toolbar position, prediction, default text font, workspace folder and paper.">
+<meta property="og:description" content="Noteic settings: light and dark mode, nine accent colors, ink prediction, the pen side button, the default text font, your workspace folder and paper.">
 <meta property="og:url" content="https://noteic.github.io/guide/settings/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090b11" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/noteic-32.png">
 <link rel="apple-touch-icon" href="../../assets/img/noteic-180.png">
-<link rel="stylesheet" href="../../assets/site.css?v=5613f713">
+<link rel="stylesheet" href="../../assets/site.css?v=57b72942">
 <script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("noteic-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../../assets/site.js?v=5613f713" defer></script>
+<script src="../../assets/site.js?v=57b72942" defer></script>
 </head>
 <body class="docs" data-root="../../" data-index="">
 <a class="skip" href="#main">Skip to content</a>
@@ -71,9 +71,11 @@
         <li><a href="../../guide/ruler-and-protractor/">Ruler and protractor</a></li>
         <li><a href="../../guide/text/">Text, formulas and tables</a></li>
         <li><a href="../../guide/memo-tape/">Memo tape</a></li>
+        <li><a href="../../guide/stickers/">Stickers</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
         <li><a href="../../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../../guide/pdf/">PDF</a></li>
         <li><a href="../../guide/library/">Library</a></li>
         <li><a href="../../guide/tabs-and-windows/">Tabs and windows</a></li>
@@ -89,42 +91,54 @@
   <main class="content" id="main">
     <article>
 <h1>Settings</h1>
-<p class="lead">All settings are under <span class="ui">…</span> › <span class="ui">Settings</span>, in the More menu at the end of the toolbar.</p>
+<p class="lead">All settings are under <span class="ui">…</span> › <span class="ui">Settings</span>, in the More menu at the end of the toolbar. The arrow at the top takes you back to the menu.</p>
 
 <h2 id="appearance">Appearance<a class="headerlink" href="#appearance" aria-label="Link to this section">#</a></h2>
 <ul>
-  <li><span class="ui">Windows</span>, <span class="ui">Light</span> or <span class="ui">Dark</span>. <span class="ui">Windows</span> follows your Windows setting and is the default.</li>
-  <li><span class="ui">Accent color</span>: Blue, Purple, Pink, Orange, Green, Petrol or Graphite. It colors Noteic itself, never your ink or paper.</li>
+  <li><span class="ui">Light</span>, <span class="ui">Dark</span> or <span class="ui">System</span>. <span class="ui">System</span> follows your Windows setting and is the default.</li>
+  <li><span class="ui">Accent color</span>: Blue, Indigo, Purple, Pink, Orange, Gold, Green, Petrol or Graphite. It colors Noteic itself, never your ink or paper.</li>
+  <li><span class="ui">Customize toolbar</span> chooses which tools you see. See <a href="../../guide/toolbar/">Customize the toolbar</a>.</li>
 </ul>
+<p>To move the toolbar to another edge of the window, drag its grip. See <a href="../../guide/toolbar/#move-the-toolbar">Move the toolbar</a>.</p>
 <figure>
   <img src="../../assets/img/library-dark.jpg" width="1600" height="1013" alt="Noteic in dark mode with the green accent color and yellow handwriting on dark grid paper." loading="lazy">
 </figure>
 
-<h2 id="toolbar">Toolbar<a class="headerlink" href="#toolbar" aria-label="Link to this section">#</a></h2>
+<h2 id="pen-and-ink">Pen and ink<a class="headerlink" href="#pen-and-ink" aria-label="Link to this section">#</a></h2>
 <ul>
-  <li>Tap an edge in the window picture to move the toolbar to the top, bottom, left or right.</li>
-  <li><span class="ui">Customize toolbar…</span> chooses which tools you see. See <a href="../../guide/toolbar/">Customize the toolbar</a>.</li>
+  <li><span class="ui">Ink prediction</span>: <span class="ui">Off</span>, <span class="ui">Gentle</span>, <span class="ui">Full</span> or <span class="ui">Max</span> (8, 16 or 24 ms ahead). The ink runs a little ahead of the pen tip, which shortens the visible gap, but can overshoot briefly when you lift the pen. <span class="ui">Gentle</span> is the default.</li>
+  <li><span class="ui">Pen side button</span>: what the side button of your pen does while you hold it.
+    <ul>
+      <li><span class="ui">Off</span> (the default): nothing special in Noteic.</li>
+      <li><span class="ui">Lasso</span>: hold the button and circle what you want to select. The selection bar appears. If nothing was caught, your previous tool is back.</li>
+      <li><span class="ui">Eraser</span>: hold the button to erase, let go to write again.</li>
+    </ul>
+  </li>
+  <li><span class="ui">Top button</span>: the top button of your pen is set up in Windows. <span class="ui">Set it up in Windows</span> opens Windows Settings › Bluetooth &amp; devices › Pen &amp; Windows Ink.</li>
 </ul>
+<figure>
+  <img src="../../assets/img/new-1-5-1-pen-side-button.jpg" width="1280" height="720" alt="Tap More, open Settings and choose Lasso or Eraser under Pen side button." loading="lazy">
+</figure>
 
-<h2 id="writing">Writing<a class="headerlink" href="#writing" aria-label="Link to this section">#</a></h2>
-<ul>
-  <li><span class="ui">Prediction</span>: <span class="ui">Off</span>, <span class="ui">Gentle</span>, <span class="ui">Full</span> or <span class="ui">Max</span>. The ink runs a little ahead of the pen tip, which shortens the visible gap, but can overshoot briefly when you lift the pen. <span class="ui">Gentle</span> is the default.</li>
-  <li><span class="ui">Default text box font</span> shows the font for new text boxes. <span class="ui">Reset</span> goes back to Segoe UI, 12 pt, black.</li>
-</ul>
+<h2 id="text">Text<a class="headerlink" href="#text" aria-label="Link to this section">#</a></h2>
+<p><span class="ui">Default text box font</span> shows the font, size and color for new text boxes. To change it, set up a text box the way you like and choose <span class="ui">…</span> › <span class="ui">Set as default</span> in its toolbar. <span class="ui">Reset</span> goes back to Segoe UI, 12 pt, black.</p>
 
-<h2 id="workspace">Workspace<a class="headerlink" href="#workspace" aria-label="Link to this section">#</a></h2>
+<h2 id="library">Library<a class="headerlink" href="#library" aria-label="Link to this section">#</a></h2>
 <p>Shows the folder where your notes live, by default <code>Documents\Noteic</code>.</p>
 <ul>
-  <li><span class="ui">Show in Explorer</span> opens the folder.</li>
-  <li><span class="ui">Choose folder…</span> picks another folder as the workspace. Nothing is moved.</li>
+  <li><span class="ui">Open in Explorer</span> opens the folder.</li>
+  <li><span class="ui">Use another folder</span> picks another folder as the workspace. Your notes stay where they are.</li>
 </ul>
 <p>To keep several workspaces, for example one per semester, see <a href="../../guide/library/#workspaces">Library › Workspaces</a>.</p>
 
-<h2 id="paper-and-size">Paper and size<a class="headerlink" href="#paper-and-size" aria-label="Link to this section">#</a></h2>
-<p>Opens the page menu for size, paper styles and colors. See <a href="../../guide/pages-and-paper/">Pages and paper</a>.</p>
+<h2 id="current-page">Current page<a class="headerlink" href="#current-page" aria-label="Link to this section">#</a></h2>
+<p><span class="ui">Paper &amp; size</span> opens the page menu for background, grid and page size. See <a href="../../guide/pages-and-paper/">Pages and paper</a>.</p>
+
+<h2 id="advanced">Advanced<a class="headerlink" href="#advanced" aria-label="Link to this section">#</a></h2>
+<p><span class="ui">Diagnostics</span> turns on a display of performance and memory usage.</p>
 
 <h2 id="about-noteic">About Noteic<a class="headerlink" href="#about-noteic" aria-label="Link to this section">#</a></h2>
-<p><span class="ui">…</span> › <span class="ui">About Noteic</span> shows your version, for example 1.4.0.0, and a link to <a href="https://www.reddit.com/r/Noteic/">r/Noteic</a>.</p>
+<p><span class="ui">…</span> › <span class="ui">About Noteic</span> shows your version, for example 1.5.1.0, and a link to <a href="https://www.reddit.com/r/Noteic/">r/Noteic</a>.</p>
     <nav class="pager" aria-label="Previous and next page">
       <a class="prev" href="../../guide/toolbar/"><span class="dir">Previous</span><span class="name">Customize the toolbar</span></a>
       <a class="next" href="../../guide/shortcuts/"><span class="dir">Next</span><span class="name">Keyboard shortcuts</span></a>
@@ -135,10 +149,11 @@
     <p class="toc-title">On this page</p>
     <ul>
       <li><a href="#appearance">Appearance</a></li>
-      <li><a href="#toolbar">Toolbar</a></li>
-      <li><a href="#writing">Writing</a></li>
-      <li><a href="#workspace">Workspace</a></li>
-      <li><a href="#paper-and-size">Paper and size</a></li>
+      <li><a href="#pen-and-ink">Pen and ink</a></li>
+      <li><a href="#text">Text</a></li>
+      <li><a href="#library">Library</a></li>
+      <li><a href="#current-page">Current page</a></li>
+      <li><a href="#advanced">Advanced</a></li>
       <li><a href="#about-noteic">About Noteic</a></li>
     </ul>
   </aside>
@@ -149,7 +164,7 @@
     <div class="foot-cols">
       <div>
         <a class="brand" href="../../"><img src="../../assets/img/noteic-64.png" width="32" height="32" alt="">Noteic</a>
-        <p>Handwritten notes on real pages, for Windows.<br>Free in the Microsoft Store.</p>
+        <p>Handwritten notes on real pages or a whiteboard, for Windows.<br>Free in the Microsoft Store.</p>
       </div>
       <div>
         <h2>Noteic</h2>
@@ -164,6 +179,7 @@
         <ul>
           <li><a href="../../guide/">Getting started</a></li>
           <li><a href="../../guide/pens/">Pens</a></li>
+          <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
           <li><a href="../../guide/pdf/">PDF</a></li>
           <li><a href="../../guide/library/">Library</a></li>
         </ul>

@@ -17,9 +17,9 @@
 <meta name="theme-color" content="#090b11" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/noteic-32.png">
 <link rel="apple-touch-icon" href="../assets/img/noteic-180.png">
-<link rel="stylesheet" href="../assets/site.css?v=5613f713">
+<link rel="stylesheet" href="../assets/site.css?v=57b72942">
 <script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("noteic-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../assets/site.js?v=5613f713" defer></script>
+<script src="../assets/site.js?v=57b72942" defer></script>
 </head>
 <body class="docs" data-root="../" data-index="">
 <a class="skip" href="#main">Skip to content</a>
@@ -71,9 +71,11 @@
         <li><a href="../guide/ruler-and-protractor/">Ruler and protractor</a></li>
         <li><a href="../guide/text/">Text, formulas and tables</a></li>
         <li><a href="../guide/memo-tape/">Memo tape</a></li>
+        <li><a href="../guide/stickers/">Stickers</a></li>
         <li><a href="../guide/links/">Links</a></li>
         <li><a href="../guide/handwriting-to-text/">Handwriting to text</a></li>
         <li><a href="../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../guide/pdf/">PDF</a></li>
         <li><a href="../guide/library/">Library</a></li>
         <li><a href="../guide/tabs-and-windows/">Tabs and windows</a></li>
@@ -97,7 +99,7 @@
   <li>Write on the page with your pen. Touch scrolls and zooms, so your hand can rest on the screen.</li>
   <li>No pen? The mouse writes too: hold the left button and draw.</li>
 </ol>
-<p>To start another note, open <span class="ui">…</span> (More) at the end of the toolbar and choose <span class="ui">New document</span>, or press <kbd>Ctrl</kbd>+<kbd>N</kbd>.</p>
+<p>To start another note, open <span class="ui">…</span> (More) at the end of the toolbar and choose <span class="ui">New</span> › <span class="ui">Page-based document</span>, or press <kbd>Ctrl</kbd>+<kbd>N</kbd>. For one big page that grows as you write, choose <span class="ui">New</span> › <span class="ui">Whiteboard</span>. See <a href="../guide/whiteboard/">Whiteboard</a>.</p>
 
 <figure>
   <video controls preload="none" playsinline width="1600" height="1040" poster="../assets/video/pens-highlighter-shapes.jpg">
@@ -118,15 +120,16 @@
     <tr><th scope="row">Eraser</th><td>Erases whole strokes or an area. <a href="../guide/eraser/">Eraser</a></td></tr>
     <tr><th scope="row">Shapes</th><td>Lines, arrows, rectangles, stars and more. <a href="../guide/shapes/">Shapes</a></td></tr>
     <tr><th scope="row">Text box</th><td>Typed text, tables and formulas. <a href="../guide/text/">Text</a></td></tr>
-    <tr><th scope="row">Ruler</th><td>Ruler or protractor. <a href="../guide/ruler-and-protractor/">Ruler and protractor</a></td></tr>
+    <tr><th scope="row">Ruler</th><td>Ruler or protractor, in centimeters or inches. <a href="../guide/ruler-and-protractor/">Ruler and protractor</a></td></tr>
     <tr><th scope="row">Tool drawer</th><td>Memo tape and laser pointer. <a href="../guide/memo-tape/">Memo tape</a></td></tr>
-    <tr><th scope="row">Lasso selection</th><td>Select, move, scale and copy. <a href="../guide/selection/">Selection</a></td></tr>
+    <tr><th scope="row">Lasso selection</th><td>Select, move, scale, copy and recolor. On a whiteboard also Insert space. <a href="../guide/selection/">Selection</a></td></tr>
+    <tr><th scope="row">Stickers</th><td>Opens your stickers next to the page. <a href="../guide/stickers/">Stickers</a></td></tr>
     <tr><th scope="row">Pan</th><td>Drag the view with pen, finger or mouse.</td></tr>
     <tr><th scope="row">Paste</th><td>Pastes what you copied.</td></tr>
     <tr><th scope="row">Widths and colors</th><td>Four widths and eight colors for the current pen. Tap the active one again to change it.</td></tr>
     <tr><th scope="row">Undo, Redo</th><td><kbd>Ctrl</kbd>+<kbd>Z</kbd> and <kbd>Ctrl</kbd>+<kbd>Y</kbd></td></tr>
-    <tr><th scope="row">Pages</th><td>Shows the page number and opens the page overview. <a href="../guide/pages-and-paper/#page-overview">Page overview</a></td></tr>
-    <tr><th scope="row">…</th><td>More: new, open, save, images, PDF, full screen and settings.</td></tr>
+    <tr><th scope="row">Pages</th><td>Shows the page number and opens the page overview. <a href="../guide/pages-and-paper/#page-overview">Page overview</a>. On a whiteboard it says <span class="ui">Whiteboard</span> and shows everything at once.</td></tr>
+    <tr><th scope="row">…</th><td>More: new, open, save, import image, PDF, full screen and settings.</td></tr>
   </tbody>
 </table>
 </div>
@@ -134,14 +137,24 @@
 
 <h2 id="pen-touch-and-mouse">Pen, touch and mouse<a class="headerlink" href="#pen-touch-and-mouse" aria-label="Link to this section">#</a></h2>
 <ul>
-  <li><strong>Pen:</strong> writes and works every tool. The eraser end of your pen erases in every tool except Pan.</li>
-  <li><strong>Touch:</strong> never writes. One finger scrolls, two fingers pinch to zoom, and a double tap switches between 100% and the page width.</li>
+  <li><strong>Pen:</strong> writes and works every tool. The eraser end of your pen erases in every tool except Pan. The side button can select or erase while you hold it, see <a href="../guide/settings/#pen-and-ink">Settings</a>.</li>
+  <li><strong>Touch:</strong> never writes. One finger scrolls, two fingers pinch to zoom, and a double tap switches between 100% and the page width. On a whiteboard, a double tap switches between 100% and everything on it.</li>
   <li><strong>Mouse:</strong> the left button writes and works every tool. <kbd>Ctrl</kbd> and the wheel zoom, <kbd>Shift</kbd> and the wheel scroll sideways.</li>
 </ul>
-<p>Hold <kbd>Space</kbd> and drag to move the view with any tool. Zoom goes from 25% to 500%. When you zoom, a small zoom box appears with presets, <span class="ui">Fit page width</span>, <span class="ui">Fit page height</span> and <span class="ui">Lock zoom</span>.</p>
+<p>Hold <kbd>Space</kbd> and drag to move the view with any tool.</p>
+
+<h2 id="zoom">Zoom<a class="headerlink" href="#zoom" aria-label="Link to this section">#</a></h2>
+<p>Zoom goes from 25% to 500%; a whiteboard can zoom out further to show everything on it. When you zoom, a small zoom box appears. Tap the zoom level in it to open the zoom menu:</p>
+<ul>
+  <li>Zoom levels from 50% to 500%.</li>
+  <li><span class="ui">Fit</span>: <span class="ui">Width</span> or <span class="ui">Height</span> of the page, and <span class="ui">Show all</span> on a whiteboard.</li>
+  <li><span class="ui">Lock zoom</span> keeps the zoom where it is.</li>
+  <li>In page-based notes, <span class="ui">Lock scrolling</span> holds the view in all directions, <span class="ui">Lock sideways</span> only left and right.</li>
+  <li><span class="ui">Stop at edge</span> stops scrolling at the edge of the pages.</li>
+</ul>
 
 <h2 id="where-your-notes-are-saved">Where your notes are saved<a class="headerlink" href="#where-your-notes-are-saved" aria-label="Link to this section">#</a></h2>
-<p>Your notes are <code>.noteic</code> files. By default Noteic keeps them in <code>Documents\Noteic</code>, your <em>workspace</em>. You can choose another folder, for example in OneDrive, under <span class="ui">…</span> › <span class="ui">Settings</span> › <span class="ui">Choose folder…</span>. Nothing is moved when you switch.</p>
+<p>Your notes are <code>.noteic</code> files. By default Noteic keeps them in <code>Documents\Noteic</code>, your <em>workspace</em>. You can choose another folder, for example in OneDrive: open <span class="ui">…</span> › <span class="ui">Settings</span> and, under <span class="ui">Library</span>, tap <span class="ui">Use another folder</span>. Your notes stay where they are.</p>
 <ul>
   <li><strong>Save:</strong> <span class="ui">…</span> › <span class="ui">Save</span> or <kbd>Ctrl</kbd>+<kbd>S</kbd>. A new note asks for a name and a folder the first time. <span class="ui">Save as</span> is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>.</li>
   <li><strong>Autosave:</strong> once a note has a file, Noteic saves it by itself about 20 seconds after your last change. A star (*) in the tab means there are changes not yet in the file.</li>
@@ -161,6 +174,7 @@
       <li><a href="#write-your-first-note">Write your first note</a></li>
       <li><a href="#the-toolbar">The toolbar</a></li>
       <li><a href="#pen-touch-and-mouse">Pen, touch and mouse</a></li>
+      <li><a href="#zoom">Zoom</a></li>
       <li><a href="#where-your-notes-are-saved">Where your notes are saved</a></li>
     </ul>
   </aside>
@@ -171,7 +185,7 @@
     <div class="foot-cols">
       <div>
         <a class="brand" href="../"><img src="../assets/img/noteic-64.png" width="32" height="32" alt="">Noteic</a>
-        <p>Handwritten notes on real pages, for Windows.<br>Free in the Microsoft Store.</p>
+        <p>Handwritten notes on real pages or a whiteboard, for Windows.<br>Free in the Microsoft Store.</p>
       </div>
       <div>
         <h2>Noteic</h2>
@@ -186,6 +200,7 @@
         <ul>
           <li><a href="../guide/">Getting started</a></li>
           <li><a href="../guide/pens/">Pens</a></li>
+          <li><a href="../guide/whiteboard/">Whiteboard</a></li>
           <li><a href="../guide/pdf/">PDF</a></li>
           <li><a href="../guide/library/">Library</a></li>
         </ul>

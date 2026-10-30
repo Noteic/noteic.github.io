@@ -4,22 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Selection and lasso &#183; Noteic</title>
-<meta name="description" content="Select with the lasso or a rectangle in Noteic, then move, scale, rotate, copy, recolor or drag your selection onto another page.">
+<meta name="description" content="Select with the lasso or a rectangle in Noteic, then move, scale, rotate, copy, recolor with your toolbar colors, save as a sticker or drag your selection onto another page.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/selection/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Selection and lasso &#183; Noteic">
-<meta property="og:description" content="Select with the lasso or a rectangle in Noteic, then move, scale, rotate, copy, recolor or drag your selection onto another page.">
+<meta property="og:description" content="Select with the lasso or a rectangle in Noteic, then move, scale, rotate, copy, recolor with your toolbar colors, save as a sticker or drag your selection onto another page.">
 <meta property="og:url" content="https://noteic.github.io/guide/selection/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090b11" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/noteic-32.png">
 <link rel="apple-touch-icon" href="../../assets/img/noteic-180.png">
-<link rel="stylesheet" href="../../assets/site.css?v=5613f713">
+<link rel="stylesheet" href="../../assets/site.css?v=57b72942">
 <script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("noteic-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../../assets/site.js?v=5613f713" defer></script>
+<script src="../../assets/site.js?v=57b72942" defer></script>
 </head>
 <body class="docs" data-root="../../" data-index="">
 <a class="skip" href="#main">Skip to content</a>
@@ -71,9 +71,11 @@
         <li><a href="../../guide/ruler-and-protractor/">Ruler and protractor</a></li>
         <li><a href="../../guide/text/">Text, formulas and tables</a></li>
         <li><a href="../../guide/memo-tape/">Memo tape</a></li>
+        <li><a href="../../guide/stickers/">Stickers</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
         <li><a href="../../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../../guide/pdf/">PDF</a></li>
         <li><a href="../../guide/library/">Library</a></li>
         <li><a href="../../guide/tabs-and-windows/">Tabs and windows</a></li>
@@ -98,7 +100,7 @@
   <li>Tap the button again to go back to the pen.</li>
 </ol>
 <ul>
-  <li><strong>Rectangle instead of lasso:</strong> press and hold the button and choose <span class="ui">Rectangle</span>.</li>
+  <li><strong>Rectangle instead of lasso:</strong> press and hold the button and choose <span class="ui">Rectangle</span>. On a whiteboard, the same menu has <a href="../../guide/whiteboard/#insert-space">Insert space</a>.</li>
   <li><strong>Tap</strong> an item to select just that one. Tap empty paper to clear the selection.</li>
   <li><strong>Add more:</strong> hold <kbd>Shift</kbd> while you draw or tap.</li>
   <li><strong>Everything on the page:</strong> <kbd>Ctrl</kbd>+<kbd>A</kbd>.</li>
@@ -120,10 +122,25 @@
   <li><span class="ui">Convert to text</span> for handwriting. See <a href="../../guide/handwriting-to-text/">Handwriting to text</a>.</li>
   <li><span class="ui">Edit text box</span>, <span class="ui">Edit formula</span> or <span class="ui">Crop image</span> when one of those is selected.</li>
   <li><span class="ui">Cut</span>, <span class="ui">Copy</span> and <span class="ui">Duplicate</span>.</li>
-  <li><span class="ui">Style</span>: line width, line style, fill and color for ink and shapes.</li>
+  <li><span class="ui">Save as sticker</span>: keep the selection to place it again in any note. See <a href="../../guide/stickers/">Stickers</a>.</li>
+  <li><span class="ui">Style</span> (the palette): line width and color, see below.</li>
   <li><span class="ui">Anchor link</span>: link the selection to a spot in your notes. See <a href="../../guide/links/">Links</a>.</li>
   <li><span class="ui">Delete</span>.</li>
 </ul>
+
+<h2 id="style-and-color">Style and color<a class="headerlink" href="#style-and-color" aria-label="Link to this section">#</a></h2>
+<p>Tap <span class="ui">Style</span> in the selection bar. A compact field opens below the selection bar, or next to it when there is no room, and never covers your selection.</p>
+<ul>
+  <li><span class="ui">Line</span>: the width in millimeters, from 0.1 to 2 mm.</li>
+  <li><strong>Colors:</strong> the same colors as in your toolbar, in the same order. Tap one to recolor the selection.</li>
+  <li><strong>Change a toolbar color:</strong> tap the marked color again, or the palette button at the end of the row. The selection and the toolbar color change together, and Noteic keeps the new color.</li>
+  <li>When the selection has a color that is not in your toolbar, the palette button picks a one-time color with a color field and a <span class="ui">Hex</span> box.</li>
+  <li><strong>Shapes</strong> also get the line style, <span class="ui">Fill</span>, and <span class="ui">Outline</span> or <span class="ui">Fill</span> to choose which part you color.</li>
+</ul>
+<p>Highlighter stays see-through when you recolor it.</p>
+<figure>
+  <img src="../../assets/img/new-1-5-1-selection-colors.jpg" width="1280" height="720" alt="A handwritten formula selected with the lasso, the selection bar with Style, and the compact Style field with the eight colors of the toolbar." loading="lazy">
+</figure>
 
 <h2 id="copy-and-paste">Copy and paste<a class="headerlink" href="#copy-and-paste" aria-label="Link to this section">#</a></h2>
 <ul>
@@ -145,6 +162,7 @@
       <li><a href="#select">Select</a></li>
       <li><a href="#move-scale-and-rotate">Move, scale and rotate</a></li>
       <li><a href="#the-selection-bar">The selection bar</a></li>
+      <li><a href="#style-and-color">Style and color</a></li>
       <li><a href="#copy-and-paste">Copy and paste</a></li>
     </ul>
   </aside>
@@ -155,7 +173,7 @@
     <div class="foot-cols">
       <div>
         <a class="brand" href="../../"><img src="../../assets/img/noteic-64.png" width="32" height="32" alt="">Noteic</a>
-        <p>Handwritten notes on real pages, for Windows.<br>Free in the Microsoft Store.</p>
+        <p>Handwritten notes on real pages or a whiteboard, for Windows.<br>Free in the Microsoft Store.</p>
       </div>
       <div>
         <h2>Noteic</h2>
@@ -170,6 +188,7 @@
         <ul>
           <li><a href="../../guide/">Getting started</a></li>
           <li><a href="../../guide/pens/">Pens</a></li>
+          <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
           <li><a href="../../guide/pdf/">PDF</a></li>
           <li><a href="../../guide/library/">Library</a></li>
         </ul>
