@@ -1,5 +1,6 @@
 404.html
 download/index.html
+guide/dark-pages/index.html
 guide/eraser/index.html
 guide/fill-and-laser/index.html
 guide/handwriting-to-text/index.html
@@ -10,6 +11,7 @@ guide/links/index.html
 guide/memo-tape/index.html
 guide/pages-and-paper/index.html
 guide/pdf/index.html
+guide/pen-and-mouse-buttons/index.html
 guide/pens/index.html
 guide/ruler-and-protractor/index.html
 guide/selection/index.html
