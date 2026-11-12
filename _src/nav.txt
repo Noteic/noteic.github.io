@@ -14,7 +14,9 @@ Memo tape | guide/memo-tape
 Stickers | guide/stickers
 Links | guide/links
 Handwriting to text | guide/handwriting-to-text
+Search | guide/search
 Pages and paper | guide/pages-and-paper
+Outline | guide/outline
 Dark pages | guide/dark-pages
 Whiteboard | guide/whiteboard
 PDF | guide/pdf

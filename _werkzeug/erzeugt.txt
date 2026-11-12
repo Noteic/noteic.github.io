@@ -9,11 +9,13 @@ guide/index.html
 guide/library/index.html
 guide/links/index.html
 guide/memo-tape/index.html
+guide/outline/index.html
 guide/pages-and-paper/index.html
 guide/pdf/index.html
 guide/pen-and-mouse-buttons/index.html
 guide/pens/index.html
 guide/ruler-and-protractor/index.html
+guide/search/index.html
 guide/selection/index.html
 guide/settings/index.html
 guide/shapes/index.html

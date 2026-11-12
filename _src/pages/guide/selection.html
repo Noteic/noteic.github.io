@@ -5,22 +5,24 @@ description: Select with the lasso or a rectangle in Noteic, then move, scale, r
 <h1>Selection and lasso</h1>
 <p class="lead">Circle what you want to change. Then move it, scale it, rotate it, copy it, give it a new color or drag it onto another page.</p>
 
-<h2>Select</h2>
+<h2 id="select">Select</h2>
 <ol class="steps">
   <li>Tap <span class="ui">Lasso selection</span> in the toolbar.</li>
   <li>Draw a loop around what you want. Everything completely inside the loop is selected.</li>
   <li>Tap the button again to go back to the pen.</li>
 </ol>
 <ul>
-  <li><strong>Rectangle instead of lasso:</strong> press and hold the button and choose <span class="ui">Rectangle</span>. On a whiteboard, the same menu has <a href="{{link:guide/whiteboard#insert-space}}">Insert space</a>.</li>
+  <li><strong>Rectangle instead of lasso:</strong> press and hold the button and choose <span class="ui">Rectangle</span>.</li>
+  <li><strong>More in the same menu:</strong> <span class="ui">Select text</span> selects the text of an imported PDF to copy, highlight or underline it; elsewhere it selects like the lasso (see <a href="{{link:guide/pdf#select-text}}">PDF › Select text</a>). On a whiteboard, the menu has <a href="{{link:guide/whiteboard#insert-space}}">Insert space</a> instead.</li>
   <li><strong>Tap</strong> an item to select just that one. Tap empty paper to clear the selection.</li>
   <li><strong>Add more:</strong> hold <kbd>Shift</kbd> while you draw or tap.</li>
   <li><strong>Everything on the page:</strong> <kbd>Ctrl</kbd>+<kbd>A</kbd>.</li>
   <li><strong>Without the button:</strong> press <kbd>L</kbd>, or use the side button of your pen or the right mouse button. See <a href="{{link:guide/pen-and-mouse-buttons}}">Pen and mouse buttons</a>.</li>
 </ul>
-<p>You can select handwriting, highlighter, shapes, text boxes, images, formulas, tables and memo tape. A selection always stays on one page.</p>
+<p>You can select handwriting, highlighter, shapes, connectors, text boxes, images, formulas, tables and memo tape. A selection always stays on one page.</p>
+<p>If your pen has haptics, it vibrates briefly when the lasso selects something. See <a href="{{link:guide/pens#haptic-feedback}}">Haptic feedback</a>.</p>
 
-<h2>Move, scale and rotate</h2>
+<h2 id="move-scale-and-rotate">Move, scale and rotate</h2>
 <ul>
   <li><strong>Move:</strong> drag inside the frame. Release it over another page to move it there.</li>
   <li><strong>Scale:</strong> drag a corner. Line widths scale along.</li>
@@ -28,8 +30,12 @@ description: Select with the lasso or a rectangle in Noteic, then move, scale, r
   <li><strong>Rotate:</strong> drag the round knob above the frame. Hold <kbd>Shift</kbd> for 15° steps.</li>
 </ul>
 <p>A single line, arrow or polygon also shows dots on its points. Drag them to reshape it; dragging the middle of a curved arrow bends it.</p>
+<ul>
+  <li><strong>Connectors:</strong> when you move, scale or rotate a shape, its connectors follow. A selected connector shows a dot at each end: drag it onto another shape to attach the end there, or onto empty paper to release it. See <a href="{{link:guide/shapes#connectors}}">Connectors</a>.</li>
+  <li><strong>Yellow point and tilt handle:</strong> some arrows and the burst show a yellow point, and 3D shapes a round handle in the middle. See <a href="{{link:guide/shapes#change-a-shape-later}}">Change a shape later</a>.</li>
+</ul>
 
-<h2>Small selections</h2>
+<h2 id="small-selections">Small selections</h2>
 <p>Small arrows, dots and short lines are easy to move:</p>
 <ul>
   <li>Drag the middle of the frame to move. In a small selection, only what you can see as a dot or a handle reshapes or scales it.</li>
@@ -37,7 +43,7 @@ description: Select with the lasso or a rectangle in Noteic, then move, scale, r
   <li>When the shorter side of a selection is under about 7 mm on screen, a round move button with four arrows appears below it. Drag it to move the selection. The selection bar makes room for it.</li>
 </ul>
 
-<h2>The selection bar</h2>
+<h2 id="the-selection-bar">The selection bar</h2>
 <p>Under the selection, a small bar offers what fits your selection:</p>
 <ul>
   <li><span class="ui">Convert to text</span> for handwriting. See <a href="{{link:guide/handwriting-to-text}}">Handwriting to text</a>.</li>
@@ -49,21 +55,22 @@ description: Select with the lasso or a rectangle in Noteic, then move, scale, r
   <li><span class="ui">Delete</span>.</li>
 </ul>
 
-<h2>Style and color</h2>
+<h2 id="style-and-color">Style and color</h2>
 <p>Tap <span class="ui">Style</span> in the selection bar. A compact field opens below the selection bar, or next to it when there is no room, and never covers your selection.</p>
 <ul>
   <li><span class="ui">Line</span>: the width in millimeters, from 0.1 to 2 mm.</li>
-  <li><strong>Colors:</strong> the same colors as in your toolbar, in the same order. Tap one to recolor the selection.</li>
+  <li><strong>Colors:</strong> the same colors as in your toolbar, in the same order, up to twelve. Tap one to recolor the selection.</li>
   <li><strong>Change a toolbar color:</strong> tap the marked color again, or the palette button at the end of the row. The selection and the toolbar color change together, and Noteic keeps the new color.</li>
   <li>When the selection has a color that is not in your toolbar, the palette button picks a one-time color with a color field and a <span class="ui">Hex</span> box.</li>
   <li><strong>Shapes</strong> also get the line style, <span class="ui">Fill</span>, and <span class="ui">Outline</span> or <span class="ui">Fill</span> to choose which part you color.</li>
+  <li><strong>Number lines</strong> also get <span class="ui">Spacing</span>: <span class="ui">−</span> and <span class="ui">+</span> set how far the ticks are apart, from 2 to 50 mm. See <a href="{{link:guide/shapes#number-line}}">Number line</a>.</li>
 </ul>
 <p>Highlighter stays see-through when you recolor it.</p>
 <figure>
   <img src="{{root}}assets/img/new-1-5-1-selection-colors.jpg" width="1280" height="720" alt="A handwritten formula selected with the lasso, the selection bar with Style, and the compact Style field with the eight colors of the toolbar." loading="lazy">
 </figure>
 
-<h2>Copy and paste</h2>
+<h2 id="copy-and-paste">Copy and paste</h2>
 <ul>
   <li><kbd>Ctrl</kbd>+<kbd>C</kbd>, <kbd>Ctrl</kbd>+<kbd>X</kbd> and <kbd>Ctrl</kbd>+<kbd>V</kbd> work as usual. <kbd>Ctrl</kbd>+<kbd>D</kbd> duplicates.</li>
   <li>Paste lands under the pointer, or in the middle of the view.</li>

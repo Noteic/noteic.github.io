@@ -1,15 +1,15 @@
 <!--
 title: PDF
-description: Import PDFs into Noteic, pick the pages you need, write on them and export your notes or a whiteboard as a vector PDF. Plus images from files, websites and the clipboard.
+description: Import PDFs into Noteic, write on them, select their text to copy, highlight or underline it, and export your notes or a whiteboard as a vector PDF. Plus images from files, websites and the clipboard.
 -->
 <h1>PDF</h1>
-<p class="lead">Bring lecture slides and worksheets into your notes, write right on them and export the result as a PDF.</p>
+<p class="lead">Bring lecture slides and worksheets into your notes, write right on them, copy and mark their text, and export the result as a PDF.</p>
 
 <figure>
   <img src="{{root}}assets/img/pdf-import.jpg" width="1600" height="1012" alt="The Import PDF dialog with page thumbnails and all 100 pages selected." loading="lazy">
 </figure>
 
-<h2>Import a PDF</h2>
+<h2 id="import-a-pdf">Import a PDF</h2>
 <ol class="steps">
   <li>Save your note first, because the PDF is stored inside the note.</li>
   <li>Open <span class="ui">…</span> › <span class="ui">Import PDF</span> and choose the file.</li>
@@ -17,21 +17,53 @@ description: Import PDFs into Noteic, pick the pages you need, write on them and
   <li>Tap <span class="ui">Import</span>.</li>
 </ol>
 <p>The pages are added after the current page, each in its own PDF size. If the note only has one empty page, that page is replaced. You can undo the import.</p>
+<p><strong>Bookmarks:</strong> if the PDF has bookmarks, the ones of the pages you import are added to the <a href="{{link:guide/outline#pdf-bookmarks}}">outline</a> of your note. Open it with the page number in the toolbar or <kbd>Ctrl</kbd>+<kbd>G</kbd>, then <span class="ui">Outline</span>.</p>
 <p><strong>New note from a PDF:</strong> in the <a href="{{link:guide/library}}">library</a>, right-click or press and hold a Chapter and choose <span class="ui">Import PDF…</span>. Noteic creates a new note named after the PDF.</p>
 
-<h2>Write on PDF pages</h2>
+<h2 id="write-on-pdf-pages">Write on PDF pages</h2>
 <p>The PDF is the page background: every tool writes on top of it. Use <a href="{{link:guide/pages-and-paper#extend-a-page}}">Extend page borders</a> to add room around a PDF page; the paper style you pick fills the new area. With <a href="{{link:guide/dark-pages}}">Dark pages</a> on, PDF pages stay as they are.</p>
+<div class="note"><strong>If a PDF page stays empty</strong>When one page of a PDF has made the PDF engine crash twice, Noteic skips that page from then on: it shows without its PDF content, and <span class="ui">Select text</span> and search find no text on it. All other pages work as usual. Noteic tries the page again after its next update.</div>
 
-<h2>Export as PDF</h2>
+<h2 id="select-text">Select text</h2>
+<p>Select the text of an imported PDF to copy, highlight or underline it. This came with Noteic 1.7.</p>
+<ol class="steps">
+  <li>Press and hold <span class="ui">Lasso selection</span> in the toolbar and choose <span class="ui">Select text</span>.</li>
+  <li>Drag over the text of a PDF page. Noteic selects word by word. To select one word, double-tap it.</li>
+  <li>Drag the handles at the start and at the end to change the selection.</li>
+  <li>Use the bar that appears at the selection:</li>
+</ol>
+<div class="table-wrap">
+<table>
+  <tbody>
+    <tr><th scope="row">Copy</th><td>Puts the text on the clipboard. <kbd>Ctrl</kbd>+<kbd>C</kbd> does the same.</td></tr>
+    <tr><th scope="row">Highlight</th><td>Tap one of the five colors next to the highlighter icon. They are the first five colors of your <a href="{{link:guide/highlighter}}">highlighter</a>.</td></tr>
+    <tr><th scope="row">Remove highlight</th><td>The eraser icon shows when the selected text is highlighted, and takes the highlight away.</td></tr>
+    <tr><th scope="row">Underline</th><td>Four styles: <span class="ui">Underline</span>, <span class="ui">Double underline</span>, <span class="ui">Wavy underline</span> and <span class="ui">Dashed underline</span>. The line gets the color of the field next to them, <span class="ui">Underline color</span>, and the width of your pen, between 0.3 and 0.8 mm.</td></tr>
+  </tbody>
+</table>
+</div>
+<ul>
+  <li><strong>Your own colors:</strong> press and hold one of the five highlight colors, or right-click it, to change it. <span class="ui">Reset</span> brings back the color of your highlighter. Tap <span class="ui">Underline color</span> to change the color of the underline. It starts with the color of your pen, and <span class="ui">Pen color</span> goes back to it.</li>
+  <li><strong>Everywhere else,</strong> <span class="ui">Select text</span> works like the lasso, so you can leave it on while you work with a PDF. To switch back, press and hold the button and choose <span class="ui">Lasso</span> or <span class="ui">Rectangle</span>.</li>
+  <li><strong>Highlights and underlines</strong> are part of your page like anything you draw: undo them with <kbd>Ctrl</kbd>+<kbd>Z</kbd>, erase them or select them with the <a href="{{link:guide/selection}}">lasso</a>.</li>
+  <li><strong>Find text:</strong> to look for a word in a PDF, press <kbd>Ctrl</kbd>+<kbd>F</kbd>. Search also finds PDF text, and it starts with the text you have selected. See <a href="{{link:guide/search}}">Search your notes</a>.</li>
+  <li><strong>One page at a time:</strong> a text selection stays on one PDF page.</li>
+  <li><strong>Pages without text:</strong> some PDF pages are only a picture, for example a scan, and have no text to select. Noteic says “No selectable text on this page”, and the tool works like the lasso there.</li>
+  <li><strong>Text that can't be copied:</strong> in some PDFs, Noteic can't read the characters behind the text. <span class="ui">Copy</span> is grayed out then; highlighting and underlining still work.</li>
+</ul>
+<p><span class="ui">Select text</span> is in page-based notes. On a <a href="{{link:guide/whiteboard}}">whiteboard</a>, the same menu has <a href="{{link:guide/whiteboard#insert-space}}">Insert space</a> instead.</p>
+
+<h2 id="export-as-pdf">Export as PDF</h2>
 <ol class="steps">
   <li>Open <span class="ui">…</span> › <span class="ui">Export as PDF</span>.</li>
   <li>Pick the pages, or tap <span class="ui">Only this page</span>.</li>
   <li>Choose where to save. When it is done, Noteic offers to open the file.</li>
 </ol>
 <p>The export is a vector PDF: sharp at any zoom. It contains your paper and patterns, imported PDF pages, images, ink, highlighter, fills, shapes, text, formulas and memo tape (covered).</p>
+<p><strong>Bookmarks:</strong> if your note has an <a href="{{link:guide/outline}}">outline</a>, Noteic writes it into the PDF as bookmarks, for the pages you export.</p>
 <p>On a <a href="{{link:guide/whiteboard}}">whiteboard</a>, you choose under <span class="ui">Save as type</span> instead: the visible area on A4 or A3, or the whole whiteboard in sheets. See <a href="{{link:guide/whiteboard#export-as-pdf}}">Whiteboard › Export as PDF</a>. <span class="ui">Import PDF</span> is only in page-based notes.</p>
 
-<h2>Images</h2>
+<h2 id="images">Images</h2>
 <ul>
   <li><span class="ui">…</span> › <span class="ui">Import image</span> adds a PNG, JPG, GIF, BMP, TIFF or WebP file.</li>
   <li>Drag an image from File Explorer or from a website into your note.</li>

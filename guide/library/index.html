@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Library &#183; Noteic</title>
-<meta name="description" content="Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, with colors, icons, tags, favorites, search filters and workspaces.">
+<meta name="description" content="Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, in columns side by side, with colors, icons, tags, favorites, workspaces and a search that looks inside your notes.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/library/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Library &#183; Noteic">
-<meta property="og:description" content="Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, with colors, icons, tags, favorites, search filters and workspaces.">
+<meta property="og:description" content="Organize your Noteic notes in Subjects, Chapters, Notes and sub-notes, in columns side by side, with colors, icons, tags, favorites, workspaces and a search that looks inside your notes.">
 <meta property="og:url" content="https://noteic.github.io/guide/library/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -74,7 +74,9 @@
         <li><a href="../../guide/stickers/">Stickers</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
+        <li><a href="../../guide/search/">Search</a></li>
         <li><a href="../../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../../guide/outline/">Outline</a></li>
         <li><a href="../../guide/dark-pages/">Dark pages</a></li>
         <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../../guide/pdf/">PDF</a></li>
@@ -93,25 +95,39 @@
   <main class="content" id="main">
     <article>
 <h1>Library</h1>
-<p class="lead">Your notes, sorted like a binder: Subjects, Chapters and Notes, with colors, icons, tags and favorites. Create, rename and color everything right in the list.</p>
+<p class="lead">Your notes, sorted like a binder: Subjects, Chapters and Notes, with colors, icons, tags and favorites. Create, rename and color everything right in the list, and search inside your notes.</p>
 
 <figure>
   <img src="../../assets/img/library-columns.jpg" width="1600" height="1019" alt="The library in dark mode with Subjects, Chapters and Notes with thumbnails, next to an open page." loading="lazy">
 </figure>
 
 <h2 id="open-the-library">Open the library<a class="headerlink" href="#open-the-library" aria-label="Link to this section">#</a></h2>
-<p>Tap the library button at the start of the toolbar, or press <kbd>Ctrl</kbd>+<kbd>B</kbd>. Drag its edge to make it wider: a narrow library shows one or two columns, a wide one shows Subject, Chapter and Note side by side.</p>
+<p>Tap the library button at the start of the toolbar, or press <kbd>Ctrl</kbd>+<kbd>B</kbd>.</p>
 <p>The icons on the left switch between <span class="ui">Library</span>, <span class="ui">Search</span>, <span class="ui">Recently opened</span>, <span class="ui">Favorites</span> and <span class="ui">Notes by Tags</span>.</p>
+
+<h2 id="columns">Columns side by side<a class="headerlink" href="#columns" aria-label="Link to this section">#</a></h2>
+<p>Drag the edge of the library to make it wider or narrower. Its width decides how many columns you see; there is no switch for it.</p>
+<div class="table-wrap">
+<table>
+  <tbody>
+    <tr><th scope="row">Narrow</th><td>One column: the <span class="ui">Chapters</span> of your Subject and, below them, the <span class="ui">Notes</span> of the Chapter you chose.</td></tr>
+    <tr><th scope="row">Wider</th><td>Two columns: <span class="ui">Chapters</span> and <span class="ui">Notes</span> side by side.</td></tr>
+    <tr><th scope="row">Wide</th><td>Three columns: Subjects, <span class="ui">Chapters</span> and <span class="ui">Notes</span> side by side, with the workspace button above the Subjects.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>With one or two columns, your Subject stands above them. Tap it to switch to another Subject.</p>
+<p>Drag the handle between two columns to give a column more or less room. Noteic remembers the widths.</p>
 
 <h2 id="subjects-chapters-and-notes">Subjects, Chapters and Notes<a class="headerlink" href="#subjects-chapters-and-notes" aria-label="Link to this section">#</a></h2>
 <p>A Subject (for example a course) holds Chapters (for example weeks), and Chapters hold your Notes. On disk they are simply folders and <code>.noteic</code> files in your workspace.</p>
 <ol class="steps">
-  <li>Tap <span class="ui">+</span> next to <span class="ui">Subject</span> to create a Subject.</li>
-  <li>Tap <span class="ui">+</span> next to <span class="ui">Chapter</span> to add a Chapter to it.</li>
-  <li>Tap <span class="ui">+</span> next to <span class="ui">Note</span> and choose <span class="ui">Page-based document</span> or <span class="ui">Whiteboard</span>.</li>
+  <li>Tap <span class="ui">New subject</span> below the Subjects to create a Subject. In a library with one or two columns, tap the Subject above the columns first: <span class="ui">New subject</span> is at the end of the list that opens.</li>
+  <li>Tap <span class="ui">New chapter</span> below the Chapters to add a Chapter to the Subject.</li>
+  <li>Tap <span class="ui">New note</span> below the Notes and choose <span class="ui">Page-based document</span> or <span class="ui">Whiteboard</span>.</li>
 </ol>
 <p>A name field appears right in the list, at the place where the new item will be. Type the name and press <kbd>Enter</kbd>, or tap next to it. <kbd>Esc</kbd> cancels, and nothing is created.</p>
-<p>A tap on a note selects it. To open it, right-click or press and hold the note and choose <span class="ui">Open in new tab</span>, <span class="ui">Open in background tab</span> or <span class="ui">Open in new window</span>.</p>
+<p>A tap on a note selects it. To open it, right-click or press and hold the note and choose <span class="ui">Open in new tab</span>, <span class="ui">Open in background tab</span> or <span class="ui">Open in new window</span>. A note that is already open shows <span class="ui">Open</span> in its row, and its menu offers <span class="ui">Switch to its tab</span> instead.</p>
 
 <h2 id="the-note-menu">The note menu<a class="headerlink" href="#the-note-menu" aria-label="Link to this section">#</a></h2>
 <p>Right-click or press and hold a note for:</p>
@@ -122,22 +138,33 @@
 </ul>
 <p><span class="ui">Rename</span> turns the row into a name field. You can also press <kbd>F2</kbd> to rename the item you tapped last.</p>
 <p>Subjects and Chapters have <span class="ui">Color</span> and Subjects an <span class="ui">Icon</span>, 140 icons sorted by field of study. <span class="ui">Color</span> opens 16 color fields right under the row: tap one to use it, tap it again to change it, or choose <span class="ui">No color</span>. Subjects, Chapters and tags each keep their own 16 colors. Chapters also offer <span class="ui">Import PDF…</span>.</p>
-<p>Drag the handle next to a row to put notes, Chapters and Subjects in your own order. Deleted items go to the Windows Recycle Bin, so you can restore them from there.</p>
+<p>Drag the dotted handle of a row to put notes, Chapters and Subjects in your own order. Deleted items go to the Windows Recycle Bin, so you can restore them from there.</p>
 
 <h2 id="search-and-filters">Search and filters<a class="headerlink" href="#search-and-filters" aria-label="Link to this section">#</a></h2>
-<p>Tap <span class="ui">Search</span> on the left and type. Search finds Notes and Chapters in the whole workspace by name and marks the match in yellow.</p>
+<p>Tap <span class="ui">Search</span> on the left and type. Under <span class="ui">Results</span>, Noteic lists the Notes and Chapters of the whole workspace whose name matches, and marks the match in yellow.</p>
 <p>Below the search field, three filters narrow the list, with or without text:</p>
 <ul>
   <li><span class="ui">All</span> or <span class="ui">Favorites</span>.</li>
   <li><span class="ui">All subjects</span> or one Subject.</li>
   <li><span class="ui">All tags</span> or one tag.</li>
 </ul>
+<p>With your pen, you can also write in the search field: hold the pen over it or tap it. See <a href="../../guide/text/#write-with-your-pen">Write with your pen</a>.</p>
+
+<h3 id="inside-notes">Search inside your notes <span class="badge">New in 1.7</span><a class="headerlink" href="#inside-notes" aria-label="Link to this section">#</a></h3>
+<p>From two characters on, the search also looks inside your notes. Below the names, <span class="ui">Inside notes</span> lists the notes that contain your text, in handwriting, typed text, tables, formulas or PDF text.</p>
+<ul>
+  <li>Each line shows what was found and on which pages, for example “3 hits · p. 12, 14, 31”. Results that only come close are counted as similar.</li>
+  <li>Tap a line: Noteic opens the note, opens its search field with your text and goes to the first result.</li>
+  <li>The three filters apply here too.</li>
+  <li>If some notes were not read yet, a line below the list says so, for example “2 notes not read yet”. Tap <span class="ui">Read now</span> and stay in <span class="ui">Search</span> until it is done.</li>
+</ul>
+<p>What is read, when and how to turn it off is in <a href="../../guide/search/#search-inside-your-notes">Search your notes</a>.</p>
 
 <h2 id="recent-favorites-and-tags">Recent, favorites and tags<a class="headerlink" href="#recent-favorites-and-tags" aria-label="Link to this section">#</a></h2>
 <ul>
   <li><strong>Recently opened</strong> lists your last 20 notes.</li>
   <li><strong>Favorites</strong> lists the notes you starred.</li>
-  <li><strong>Tags:</strong> in the tags view, tap <span class="ui">+</span> to add a tag. It gets the next free of 16 colors. Give tags to notes with <span class="ui">Assign Tags</span>, and tap a tag to see its notes. Right-click or press and hold a tag for <span class="ui">Rename</span>, <span class="ui">Color</span> and <span class="ui">Delete</span>.</li>
+  <li><strong>Tags:</strong> in the tags view, tap <span class="ui">New tag</span> below the tags to add a tag (in a narrow library: <span class="ui">Add tag</span>). It gets the next free of 16 colors. Give tags to notes with <span class="ui">Assign Tags</span>, and tap a tag to see its notes. Right-click or press and hold a tag for <span class="ui">Rename</span>, <span class="ui">Color</span> and <span class="ui">Delete</span>.</li>
 </ul>
 
 <h2 id="workspaces">Workspaces<a class="headerlink" href="#workspaces" aria-label="Link to this section">#</a></h2>
@@ -164,6 +191,7 @@
     <p class="toc-title">On this page</p>
     <ul>
       <li><a href="#open-the-library">Open the library</a></li>
+      <li><a href="#columns">Columns side by side</a></li>
       <li><a href="#subjects-chapters-and-notes">Subjects, Chapters and Notes</a></li>
       <li><a href="#the-note-menu">The note menu</a></li>
       <li><a href="#search-and-filters">Search and filters</a></li>

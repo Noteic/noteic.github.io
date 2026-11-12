@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pages and paper &#183; Noteic</title>
-<meta name="description" content="Choose page size and ten paper styles in Noteic, set line weight, margin line and colors, extend pages on any side and organize pages in the page overview.">
+<meta name="description" content="Choose page size and ten paper styles in Noteic, set line weight, margin line and colors, extend pages on any side and organize pages in the page overview, with bookmarks and an outline.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/pages-and-paper/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Pages and paper &#183; Noteic">
-<meta property="og:description" content="Choose page size and ten paper styles in Noteic, set line weight, margin line and colors, extend pages on any side and organize pages in the page overview.">
+<meta property="og:description" content="Choose page size and ten paper styles in Noteic, set line weight, margin line and colors, extend pages on any side and organize pages in the page overview, with bookmarks and an outline.">
 <meta property="og:url" content="https://noteic.github.io/guide/pages-and-paper/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -74,7 +74,9 @@
         <li><a href="../../guide/stickers/">Stickers</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
+        <li><a href="../../guide/search/">Search</a></li>
         <li><a href="../../guide/pages-and-paper/" aria-current="page">Pages and paper</a></li>
+        <li><a href="../../guide/outline/">Outline</a></li>
         <li><a href="../../guide/dark-pages/">Dark pages</a></li>
         <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../../guide/pdf/">PDF</a></li>
@@ -93,14 +95,15 @@
   <main class="content" id="main">
     <article>
 <h1>Pages and paper</h1>
-<p class="lead">Ten paper styles on real page sizes, with your own colors. Extend a page when you need more room, and keep track of every page in the overview.</p>
+<p class="lead">Ten paper styles on real page sizes, with your own colors. Extend a page when you need more room, and keep track of every page in the overview, with bookmarks and an outline.</p>
 
 <figure>
   <img src="../../assets/img/new-1-4-paper-styles.jpg" width="1600" height="900" alt="The page menu with size, extended borders and paper styles, next to graph, music, writing and hexagon paper." loading="lazy">
 </figure>
 
 <h2 id="open-the-page-menu">Open the page menu<a class="headerlink" href="#open-the-page-menu" aria-label="Link to this section">#</a></h2>
-<p>Open <span class="ui">…</span> › <span class="ui">Settings</span> and, under <span class="ui">Current page</span>, tap <span class="ui">Paper &amp; size</span>. Every change applies to the current page and can be undone. New pages copy the size and paper of the page before them.</p>
+<p>Open <span class="ui">…</span> (More) at the end of the toolbar and tap <span class="ui">Paper &amp; size</span>. Every change applies to the current page and can be undone. New pages copy the size and paper of the page before them.</p>
+<p>The arrow at the top of the page menu, or <kbd>Esc</kbd>, takes you back to the <span class="ui">…</span> menu. Since Noteic 1.7, <span class="ui">Paper &amp; size</span> is right in this menu. You also find it under <span class="ui">…</span> › <span class="ui">Settings</span> › <span class="ui">Pages</span>.</p>
 
 <h2 id="size">Size<a class="headerlink" href="#size" aria-label="Link to this section">#</a></h2>
 <ul>
@@ -146,17 +149,28 @@
 <p>To see your notes dark on screen without changing their paper, turn on <span class="ui">Dark pages</span> under <span class="ui">…</span> › <span class="ui">Settings</span> › <span class="ui">Appearance</span>. Files, exports and PDF pages stay as they are. See <a href="../../guide/dark-pages/">Dark pages</a>.</p>
 
 <h2 id="page-overview">Page overview<a class="headerlink" href="#page-overview" aria-label="Link to this section">#</a></h2>
-<p>Tap the page number in the toolbar, or press <kbd>Ctrl</kbd>+<kbd>G</kbd>, to see all pages at once. The current page has a colored ring. Tap a page to jump to it.</p>
+<p>Tap the page number in the toolbar, or press <kbd>Ctrl</kbd>+<kbd>G</kbd>. <span class="ui">Pages</span> opens and shows all pages at once. The current page has a colored ring. Tap a page to jump to it. <kbd>Esc</kbd> or the × closes <span class="ui">Pages</span>.</p>
+<p>Three tabs at the top choose what you see. Noteic remembers the tab you used last.</p>
+<div class="table-wrap">
+<table>
+  <tbody>
+    <tr><th scope="row">All</th><td>Every page of the note.</td></tr>
+    <tr><th scope="row">Bookmarked</th><td>Only the pages with a bookmark. You can choose it as soon as one page has a bookmark.</td></tr>
+    <tr><th scope="row">Outline</th><td>The outline of the note as a list, next to your pages. It came with Noteic 1.7. See <a href="../../guide/outline/">Outline</a>.</td></tr>
+  </tbody>
+</table>
+</div>
 <ul>
-  <li><strong>Reorder:</strong> drag a page by its handle, or press and hold it.</li>
-  <li><strong>Bookmarks:</strong> the ⋮ menu under each page sets one of 15 bookmark colors. <span class="ui">Bookmarked</span> at the top shows only pages with bookmarks, <span class="ui">All</span> shows every page again.</li>
+  <li><strong>Go to:</strong> type a page number in the <span class="ui">Go to</span> field at the top and press <kbd>Enter</kbd>.</li>
+  <li><strong>Reorder:</strong> drag a page by its handle, or press and hold it. Pages can be reordered in <span class="ui">All</span> and <span class="ui">Outline</span>, where every page is shown.</li>
+  <li><strong>Bookmarks:</strong> the ⋮ menu under each page sets one of 15 bookmark colors. <span class="ui">No bookmark</span> removes it.</li>
+  <li><strong>Outline:</strong> <span class="ui">Add to outline…</span> in the same menu makes the page an entry of the <a href="../../guide/outline/#add-an-entry">outline</a>.</li>
   <li><strong>Page commands</strong> in the same menu: <span class="ui">Insert page after</span>, <span class="ui">Duplicate page</span>, <span class="ui">Move page to the beginning</span> or <span class="ui">to the end</span>, <span class="ui">Copy page to…</span> and <span class="ui">Move page to…</span> another note, and <span class="ui">Delete page</span>.</li>
-  <li>Type a page number in the field at the top to go there.</li>
 </ul>
 <p>Between pages, a small bar moves the page above up or down, inserts a page or deletes one. <kbd>Page Up</kbd> and <kbd>Page Down</kbd> scroll page by page.</p>
     <nav class="pager" aria-label="Previous and next page">
-      <a class="prev" href="../../guide/handwriting-to-text/"><span class="dir">Previous</span><span class="name">Handwriting to text</span></a>
-      <a class="next" href="../../guide/dark-pages/"><span class="dir">Next</span><span class="name">Dark pages</span></a>
+      <a class="prev" href="../../guide/search/"><span class="dir">Previous</span><span class="name">Search</span></a>
+      <a class="next" href="../../guide/outline/"><span class="dir">Next</span><span class="name">Outline</span></a>
     </nav>
     </article>
   </main>

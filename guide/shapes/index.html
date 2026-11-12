@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shapes &#183; Noteic</title>
-<meta name="description" content="Draw clean lines, arrows, 3D shapes, block arrows, stars, speech bubbles and more in Noteic, with fill, line styles, your own colors, grid snapping and shape recognition.">
+<meta name="description" content="Draw lines, arrows, block arrows, callouts and 3D shapes in Noteic from a shapes menu with tabs, link shapes with connectors that stay attached, and set fill, line styles and your own colors.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/shapes/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Shapes &#183; Noteic">
-<meta property="og:description" content="Draw clean lines, arrows, 3D shapes, block arrows, stars, speech bubbles and more in Noteic, with fill, line styles, your own colors, grid snapping and shape recognition.">
+<meta property="og:description" content="Draw lines, arrows, block arrows, callouts and 3D shapes in Noteic from a shapes menu with tabs, link shapes with connectors that stay attached, and set fill, line styles and your own colors.">
 <meta property="og:url" content="https://noteic.github.io/guide/shapes/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -74,7 +74,9 @@
         <li><a href="../../guide/stickers/">Stickers</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
+        <li><a href="../../guide/search/">Search</a></li>
         <li><a href="../../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../../guide/outline/">Outline</a></li>
         <li><a href="../../guide/dark-pages/">Dark pages</a></li>
         <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../../guide/pdf/">PDF</a></li>
@@ -93,7 +95,7 @@
   <main class="content" id="main">
     <article>
 <h1>Shapes</h1>
-<p class="lead">45 shapes, from lines and arrows to 3D shapes and speech bubbles. Or sketch by hand and let Noteic recognize the shape.</p>
+<p class="lead">55 shapes, from lines and arrows to callouts and 3D shapes, in a menu with tabs. Connectors stay attached to your shapes. Or sketch by hand and let Noteic recognize the shape.</p>
 
 <figure>
   <img src="../../assets/img/shapes-3d.jpg" width="1525" height="1450" alt="Handwritten “New shapes!!!” above a number line, a block double arrow, a block arrow, a cube, a cylinder, a sphere, a cone, a pyramid and a prism on grid paper." loading="lazy">
@@ -102,32 +104,86 @@
 <h2 id="draw-a-shape">Draw a shape<a class="headerlink" href="#draw-a-shape" aria-label="Link to this section">#</a></h2>
 <ol class="steps">
   <li>Tap <span class="ui">Shapes</span> in the toolbar. The shapes menu opens.</li>
-  <li>Pick a shape, a line width and a line style.</li>
+  <li>Choose a tab and tap a shape. On the right, pick a line width, a line style and a color.</li>
   <li>Drag on the page from one corner to the other.</li>
 </ol>
 <p>Hold <kbd>Shift</kbd> while you drag: lines and arrows snap to 45°, a rectangle becomes a square, an ellipse a circle, and every other shape gets equal width and height.</p>
 
+<h2 id="shapes-menu">The shapes menu<a class="headerlink" href="#shapes-menu" aria-label="Link to this section">#</a></h2>
+<p>Since Noteic 1.7, the shapes are sorted into seven tabs:</p>
+<div class="table-wrap">
+<table>
+  <tbody>
+    <tr><th scope="row">Recent</th><td>The shapes and connectors you used last, newest first, up to 18. Before you have used any, it shows a starter set.</td></tr>
+    <tr><th scope="row">Lines</th><td>Lines, arrows, brackets and the number line</td></tr>
+    <tr><th scope="row">Basics</th><td>Shapes, polygons, star, heart and burst</td></tr>
+    <tr><th scope="row">Arrows</th><td>Block arrows</td></tr>
+    <tr><th scope="row">Callouts</th><td>Speech bubbles and frames</td></tr>
+    <tr><th scope="row">3D</th><td>Solids</td></tr>
+    <tr><th scope="row">Connectors</th><td>Lines that stay attached to shapes. See <a href="#connectors">Connectors</a>.</td></tr>
+  </tbody>
+</table>
+</div>
+<ul>
+  <li>Every shape is in exactly one tab, and also in <span class="ui">Recent</span> once you have used it.</li>
+  <li>The menu opens on the tab you used last.</li>
+  <li><span class="ui">Recent</span> gets its new order the next time you open the menu, so no shape jumps away under your pen.</li>
+  <li>Above the tabs are the four <a href="#drawing-modes">drawing modes</a>. On the right are <span class="ui">Line</span> and <span class="ui">Color</span>, see <a href="#line-fill-and-color">Line, fill and color</a>.</li>
+</ul>
+
 <h2 id="all-shapes">All shapes<a class="headerlink" href="#all-shapes" aria-label="Link to this section">#</a></h2>
 <ul>
-  <li><strong>Lines:</strong> line, arrow, double arrow, curved arrow, curved double arrow, each arrow also with solid heads, angle and axes.</li>
-  <li><strong>Brackets:</strong> curly, round and square, as one bracket or as a pair around the area you drag.</li>
-  <li><strong>Number line</strong> with a tick every 5 mm.</li>
-  <li><strong>Areas:</strong> rectangle, rounded rectangle, capsule, ellipse, triangle, rounded triangle, right triangle, diamond, parallelogram, isosceles trapezoid, pentagon, hexagon, heptagon, octagon, star and heart.</li>
-  <li><strong>Block arrows:</strong> a block arrow that points left or right as you drag, and a block double arrow.</li>
-  <li><strong>Callouts:</strong> square and rounded speech bubble, and a wavy frame.</li>
-  <li><strong>3D shapes:</strong> cube, cylinder, sphere, cone, pyramid and prism, with the hidden edges dashed.</li>
+  <li><strong>Lines (18):</strong> line, arrow, double arrow, curved arrow and curved double arrow, each arrow also with solid heads; angle and axes; curly, round and square brackets, as one bracket or as a pair around the area you drag; and the <a href="#number-line">number line</a>.</li>
+  <li><strong>Basics (17):</strong> rectangle, rounded rectangle, capsule, ellipse, triangle, rounded triangle, right triangle, diamond, parallelogram, isosceles trapezoid, pentagon, hexagon, heptagon, octagon, star, heart and burst.</li>
+  <li><strong>Arrows (7):</strong> a block arrow that points left or right as you drag, block double arrow, quad arrow, bent arrow, U-turn arrow, circular arrow and notched arrow.</li>
+  <li><strong>Callouts (3):</strong> square and rounded speech bubble, and a wavy frame.</li>
+  <li><strong>3D (10):</strong> cube, cylinder, sphere, cone, pyramid, prism, tetrahedron, hexagonal prism, frustum and hemisphere, with the hidden edges dashed.</li>
 </ul>
-<p>The solid-head arrows, the number line, the heptagon, the block arrows and the 3D shapes came with Noteic 1.5.</p>
+<p>Ten of them came with Noteic 1.7: the quad, bent, U-turn, circular and notched arrow, the burst, and the tetrahedron, hexagonal prism, frustum and hemisphere.</p>
+
+<h2 id="connectors">Connectors<a class="headerlink" href="#connectors" aria-label="Link to this section">#</a></h2>
+<p>A connector is a line between two shapes that stays attached. When you move, scale or rotate one of the shapes, the connector follows.</p>
+<ol class="steps">
+  <li>Tap <span class="ui">Shapes</span> and choose the <span class="ui">Connectors</span> tab.</li>
+  <li>Pick a connector under <span class="ui">Straight</span>, <span class="ui">Elbow</span> or <span class="ui">Curved</span>. Each comes plain, with one arrowhead or with two.</li>
+  <li>Drag from one shape to the other. Near a shape, its four side points appear as small circles, and the end of the connector snaps to the nearest one.</li>
+</ol>
+<ul>
+  <li><strong>Straight</strong> runs directly from end to end, <strong>Elbow</strong> runs at right angles, and <strong>Curved</strong> runs in a smooth curve.</li>
+  <li>Connectors attach to closed shapes, such as rectangles, ellipses, block arrows, callouts and 3D shapes. They do not attach to the shapes of the <span class="ui">Lines</span> tab, to other connectors, or to handwriting, text boxes and images.</li>
+  <li>An end that you let go on empty paper stays free. You can attach it later.</li>
+  <li>Line width, line style and color come from the menu, as for every shape. A connector has no fill.</li>
+</ul>
+<p>To change a connector later, select it with the <a href="../../guide/selection/">lasso</a>. It shows a dot at each end:</p>
+<ul>
+  <li>Drag a dot onto another shape to attach the end there.</li>
+  <li>Drag a dot onto empty paper to release the end.</li>
+  <li>If you move a connector on its own, it lets go of its shapes. Move it together with a shape and it stays attached.</li>
+  <li>Copy shapes together with their connector and the copy is connected too.</li>
+</ul>
+
+<h2 id="number-line">Number line<a class="headerlink" href="#number-line" aria-label="Link to this section">#</a></h2>
+<p>The number line is in the <span class="ui">Lines</span> tab. Its ticks are 5 mm apart unless you choose your own spacing, from 2 to 50 mm in steps of 1 mm.</p>
+<ul>
+  <li><strong>Before you draw:</strong> pick the number line in the shapes menu. Next to <span class="ui">Line</span>, a small field with <span class="ui">−</span> and <span class="ui">+</span> appears. It sets the spacing of the ticks.</li>
+  <li><strong>Later:</strong> select the number line, tap <span class="ui">Style</span> in the selection bar and change <span class="ui">Spacing</span> with <span class="ui">−</span> and <span class="ui">+</span>.</li>
+  <li>Every number line keeps its own spacing.</li>
+  <li>The value shows in millimeters or inches, like your <a href="../../guide/ruler-and-protractor/">ruler</a>.</li>
+</ul>
 
 <h2 id="drawing-modes">Drawing modes<a class="headerlink" href="#drawing-modes" aria-label="Link to this section">#</a></h2>
 <p>The top row of the menu changes how you draw:</p>
 <ul>
-  <li><span class="ui">Recognize</span>: draw freely. When you lift the pen, a line, circle, ellipse, triangle, rectangle or polygon becomes a clean shape. Draw from one shape's outline to another's and you get a clean connector. If nothing is recognized, your stroke stays as ink.</li>
+  <li><span class="ui">Recognize</span>: draw freely. When you lift the pen, a line, circle, ellipse, triangle, rectangle or polygon becomes a clean shape. Draw from one shape's outline to another's and you get a clean line or curve between them. This is a plain line that does not follow the shapes; for that, use a <a href="#connectors">connector</a>. If nothing is recognized, your stroke stays as ink.</li>
   <li><span class="ui">Polygon</span>: tap corner by corner; a tap on the first corner closes it. <kbd>Esc</kbd> discards it.</li>
-  <li><span class="ui">Grid snapping</span>: straight lines whose ends snap to the paper grid and to the corners of other shapes, at 0°, 45° or 90°.</li>
-  <li><span class="ui">Spline</span>: tap to set points, drag while setting a point to shape the curve. Tap the first point to close it, or release <kbd>Esc</kbd> to finish.</li>
+  <li><span class="ui">Grid</span> (grid snapping): straight lines whose ends snap to the paper grid and to the corners of other shapes, at 0°, 45° or 90°.</li>
+  <li><span class="ui">Spline</span>: tap to set points, drag while setting a point to shape the curve. Tap the first point to close it, or press <kbd>Esc</kbd> to finish.</li>
 </ul>
-<p>Tap any shape in the list to go back to plain dragging.</p>
+<p>Tap any shape in a tab to go back to plain dragging.</p>
+
+<h2 id="hold-for-shape">A quick shape with your pen<a class="headerlink" href="#hold-for-shape" aria-label="Link to this section">#</a></h2>
+<p>For a quick rectangle, circle or straight line, you don't need the shapes tool. Turn on <span class="ui">Hold for shape</span> in the menu of your pen or highlighter, draw the shape and hold the pen still at the end. The stroke becomes a clean shape, drawn as ink in that pen. See <a href="../../guide/pens/#hold-for-shape">Pens › Hold for shape</a>.</p>
+<p>Shapes from the shapes menu can do more: fill, line styles, connectors and reshaping later.</p>
 
 <h2 id="line-fill-and-color">Line, fill and color<a class="headerlink" href="#line-fill-and-color" aria-label="Link to this section">#</a></h2>
 <ul>
@@ -140,6 +196,12 @@
 
 <h2 id="change-a-shape-later">Change a shape later<a class="headerlink" href="#change-a-shape-later" aria-label="Link to this section">#</a></h2>
 <p>Select it with the <a href="../../guide/selection/">lasso</a>. Drag the frame to move, scale or rotate it, drag its point dots to reshape it, and use <span class="ui">Style</span> in the selection bar to change width, line style, fill and color. See <a href="../../guide/selection/#style-and-color">Style and color</a>.</p>
+<ul>
+  <li><strong>Yellow point:</strong> a selected quad, bent, U-turn, circular or notched arrow and the burst show a yellow point. Drag it to change the shaft width, the band width, the notch depth or the depth of the points.</li>
+  <li><strong>3D shapes:</strong> a selected 3D shape shows a round handle in its middle. Drag it down to make the shape deeper, as if you looked at it more from above, or up to make it flatter.</li>
+  <li>Both handles show when exactly one shape is selected and it is large enough on screen. Zoom in if you don't see them.</li>
+  <li><strong>Connectors</strong> follow when you move, scale or rotate their shapes. See <a href="#connectors">Connectors</a>.</li>
+</ul>
 <figure>
   <img src="../../assets/img/new-1-5-shapes-colors.jpg" width="1600" height="900" alt="New shapes in Noteic 1.5 next to a row of color fields: tap a field again to make it your own." loading="lazy">
 </figure>
@@ -160,8 +222,12 @@
     <p class="toc-title">On this page</p>
     <ul>
       <li><a href="#draw-a-shape">Draw a shape</a></li>
+      <li><a href="#shapes-menu">The shapes menu</a></li>
       <li><a href="#all-shapes">All shapes</a></li>
+      <li><a href="#connectors">Connectors</a></li>
+      <li><a href="#number-line">Number line</a></li>
       <li><a href="#drawing-modes">Drawing modes</a></li>
+      <li><a href="#hold-for-shape">A quick shape with your pen</a></li>
       <li><a href="#line-fill-and-color">Line, fill and color</a></li>
       <li><a href="#change-a-shape-later">Change a shape later</a></li>
     </ul>

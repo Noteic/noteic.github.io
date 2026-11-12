@@ -1,15 +1,15 @@
 <!--
 title: Text, formulas and tables
-description: Type in Noteic with text boxes, fonts, colors, highlights, lists and checklists, insert tables with merged cells and write LaTeX formulas with a live preview.
+description: Type in Noteic with text boxes, fonts, colors, highlights, lists and checklists, or write into them with your pen. Insert tables with merged cells and write LaTeX formulas with a live preview.
 -->
 <h1>Text, formulas and tables</h1>
-<p class="lead">Type next to your handwriting: text boxes with formatting, tables, and LaTeX formulas with a live preview.</p>
+<p class="lead">Type next to your handwriting: text boxes with formatting, tables, and LaTeX formulas with a live preview. Or write with your pen and let Noteic turn it into typed text.</p>
 
 <figure>
   <img src="{{root}}assets/img/text-formulas-tables.jpg" width="1600" height="996" alt="A text box with the text toolbar, the formula editor showing the quadratic formula, and a table with merged cells." loading="lazy">
 </figure>
 
-<h2>Text boxes</h2>
+<h2 id="text-boxes">Text boxes</h2>
 <ol class="steps">
   <li>Tap <span class="ui">Text box</span> in the toolbar.</li>
   <li>Tap the page and type. To set the width yourself, drag sideways instead of tapping.</li>
@@ -36,7 +36,25 @@ description: Type in Noteic with text boxes, fonts, colors, highlights, lists an
 <p>New text boxes start in Segoe UI, 12 pt, black. <span class="ui">Set as default</span> makes your current font, size and color the new default.</p>
 <div class="note"><strong>Paste with formatting</strong>Copy text from a website, Word or OneNote and paste it onto the page (with no text box open): Noteic creates a new text box and keeps bold, italic, headings, lists and links.</div>
 
-<h2>Formulas</h2>
+<h2 id="write-with-your-pen">Write with your pen <span class="badge">New in 1.7</span></h2>
+<p>You can fill a text box without a keyboard. Write by hand in a small handwriting field, and Noteic turns it into typed text, with the handwriting recognition built into Windows.</p>
+<ol class="steps">
+  <li>While you edit a text box, tap into it with your pen. The tap sets the cursor, and the handwriting field opens next to the box, with the hint <span class="ui">Write here</span>.</li>
+  <li>Write in the field. A moment after you lift the pen, your words turn into typed text at the start of the line.</li>
+  <li>Tap <span class="ui">Insert text</span>. Your words go into the text box at the cursor, and the field closes.</li>
+</ol>
+<ul>
+  <li><strong>Another reading:</strong> a small bar shows the last word and up to three other readings. Tap one to replace the word.</li>
+  <li><strong>Delete with the pen:</strong> strike through words or scribble over them. This works for words that are already typed text and for fresh ink.</li>
+  <li><span class="ui">Delete last word</span> removes the ink you just wrote, or else the last word.</li>
+  <li><span class="ui">Add a line</span> gives you a second line.</li>
+  <li><span class="ui">Close</span>, <kbd>Esc</kbd> or a tap with the pen outside closes the field. What you did not insert is discarded.</li>
+  <li>Only the pen opens the field. With your finger or the mouse, the text box works as before.</li>
+</ul>
+<p>The same field opens over a search field when you hold your pen over it or tap it with the pen: over <span class="ui">Find in this note</span> (<kbd>Ctrl</kbd>+<kbd>F</kbd>) and over the search field of the library. There, <span class="ui">Insert text</span> puts your words into the search field. See <a href="{{link:guide/search}}">Search your notes</a>.</p>
+<p>If Windows has no handwriting recognition for your language yet, the field says so: “No handwriting recognition — see Windows Settings › Time &amp; language”. See <a href="{{link:guide/handwriting-to-text#before-you-start}}">Before you start</a>.</p>
+
+<h2 id="formulas">Formulas</h2>
 <ol class="steps">
   <li>In a text box, tap <span class="ui">Formula</span> in the text toolbar.</li>
   <li>Type LaTeX, for example <code>x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}</code>. The preview shows the result as you type.</li>
@@ -45,10 +63,12 @@ description: Type in Noteic with text boxes, fonts, colors, highlights, lists an
 </ol>
 <p>The formula is placed as its own object just below the text box, in the box's text color. To change it, select it with the lasso and tap <span class="ui">Edit formula</span>, or double-tap it.</p>
 
-<h2>Tables</h2>
+<h2 id="tables">Tables</h2>
 <ol class="steps">
   <li>In a text box, open <span class="ui">More</span> (…) › <span class="ui">Insert table</span>.</li>
   <li>Choose a size, up to 6 × 6 to start. The table appears below the box.</li>
   <li>Type in the cells. <kbd>Tab</kbd> goes to the next cell; <kbd>Tab</kbd> in the last cell adds a row.</li>
 </ol>
 <p>In a cell, <span class="ui">More</span> (…) inserts and deletes rows and columns, merges cells to the right or below, splits merged cells and sets a <span class="ui">Cell color</span>. Tables have up to 10 columns.</p>
+
+<div class="note"><strong>Find it again</strong>Press <kbd>Ctrl</kbd>+<kbd>F</kbd> to search your note. Search finds the text in text boxes and table cells, and formulas by their LaTeX text. See <a href="{{link:guide/search}}">Search your notes</a>.</div>

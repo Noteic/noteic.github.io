@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pens &#183; Noteic</title>
-<meta name="description" content="Ballpoint, fountain pen and calligraphy pen in Noteic: pressure, widths, colors, palettes, hold to straighten and prediction.">
+<meta name="description" content="Ballpoint, fountain pen and calligraphy pen in Noteic: pressure, widths, up to 12 colors, Hold for shape, Fast pen tip, Earlier pen input, ink prediction and haptic feedback.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/pens/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Pens &#183; Noteic">
-<meta property="og:description" content="Ballpoint, fountain pen and calligraphy pen in Noteic: pressure, widths, colors, palettes, hold to straighten and prediction.">
+<meta property="og:description" content="Ballpoint, fountain pen and calligraphy pen in Noteic: pressure, widths, up to 12 colors, Hold for shape, Fast pen tip, Earlier pen input, ink prediction and haptic feedback.">
 <meta property="og:url" content="https://noteic.github.io/guide/pens/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -74,7 +74,9 @@
         <li><a href="../../guide/stickers/">Stickers</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
+        <li><a href="../../guide/search/">Search</a></li>
         <li><a href="../../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../../guide/outline/">Outline</a></li>
         <li><a href="../../guide/dark-pages/">Dark pages</a></li>
         <li><a href="../../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../../guide/pdf/">PDF</a></li>
@@ -112,12 +114,77 @@
 </ul>
 
 <h2 id="pen-settings">Pen settings<a class="headerlink" href="#pen-settings" aria-label="Link to this section">#</a></h2>
+<p>Below the three pens, the pen menu has its switches:</p>
 <ul>
   <li><span class="ui">Pressure sensitivity</span> (ballpoint and highlighter): press harder for a thicker line. On by default.</li>
-  <li><span class="ui">Hold to straighten</span>: at the end of a stroke, hold the pen still for about a second and the stroke becomes a straight line. It snaps to horizontal and vertical. Hold again after moving on to add a corner. Off by default.</li>
+  <li><span class="ui">Hold for shape</span> (every pen and the highlighter): hold the pen still at the end of a stroke, and it becomes a clean shape or a straight line. Off by default. See below.</li>
 </ul>
-<p>Under <span class="ui">…</span> › <span class="ui">Settings</span> › <span class="ui">Ink prediction</span> you choose how far the ink runs ahead of the pen tip: <span class="ui">Off</span>, <span class="ui">Gentle</span> (the default), <span class="ui">Full</span> or <span class="ui">Max</span>. More prediction shortens the gap between tip and line, but can overshoot briefly when you lift the pen.</p>
+<p>Each pen remembers its own switches.</p>
 <p>The side button of your pen can switch to the lasso, the eraser, the highlighter or your previous tool while you hold it, and the pen cursor can show your pen's color and size. With a keyboard, <kbd>P</kbd> picks the pen you used last. See <a href="../../guide/pen-and-mouse-buttons/">Pen and mouse buttons</a>.</p>
+
+<h2 id="hold-for-shape">Hold for shape<a class="headerlink" href="#hold-for-shape" aria-label="Link to this section">#</a></h2>
+<p>Draw a shape or a line by hand, and let Noteic clean it up while the pen is still on the page.</p>
+<ol class="steps">
+  <li>Tap the active pen again to open its menu and turn on <span class="ui">Hold for shape</span>.</li>
+  <li>Draw a shape or a line. At the end, hold the pen still for about a second.</li>
+  <li>The stroke snaps into a clean shape. Lift the pen.</li>
+</ol>
+<ul>
+  <li><strong>Closed strokes</strong> become a clean rectangle, triangle, ellipse, circle or polygon.</li>
+  <li><strong>Open strokes</strong> become a straight line. A line that is almost horizontal or vertical snaps exactly horizontal or vertical.</li>
+  <li><strong>Add a corner:</strong> after a line has snapped, keep drawing without lifting the pen. Hold again, or lift the pen, and the next piece is straight too.</li>
+  <li>The result is ink in the pen you write with, in its color and width. With the calligraphy pen, the line still gets thick and thin with the direction.</li>
+  <li>It works with the ballpoint, the fountain pen, the calligraphy pen and the <a href="../../guide/highlighter/#hold-for-shape">highlighter</a>, with a pen and with the mouse.</li>
+  <li><kbd>Ctrl</kbd>+<kbd>Z</kbd> removes the whole shape.</li>
+  <li>Very small strokes, up to about 5 mm, are never turned into a shape, so dots and small letters stay handwriting.</li>
+</ul>
+<div class="note"><strong>Coming from an older version?</strong><span class="ui">Hold for shape</span> replaces <span class="ui">Hold to straighten</span>. If you had it turned on for a pen, <span class="ui">Hold for shape</span> is on for that pen.</div>
+<p>For shapes with fill, line styles and connectors, use the <a href="../../guide/shapes/">shapes tool</a>.</p>
+
+<h2 id="faster-ink">Faster ink<a class="headerlink" href="#faster-ink" aria-label="Link to this section">#</a></h2>
+<p>Three settings decide how closely the ink follows your pen. You find them under <span class="ui">…</span> › <span class="ui">Settings</span> › <span class="ui">Writing</span> (see <a href="../../guide/settings/#writing">Settings</a>). <span class="ui">Fast pen tip</span> and <span class="ui">Earlier pen input</span> are on from the start.</p>
+
+<h3 id="fast-pen-tip">Fast pen tip<a class="headerlink" href="#fast-pen-tip" aria-label="Link to this section">#</a></h3>
+<p>Windows draws the newest ink right at the tip of your pen, a moment before the ink of Noteic arrives. It only changes what you see while you write, not the finished stroke.</p>
+<ul>
+  <li>It works with the ballpoint, the fountain pen and the calligraphy pen, not with the highlighter.</li>
+  <li>It needs Windows 11 24H2 or newer and a pen.</li>
+  <li>If your PC cannot use it, the switch is grey and the row says why: <span class="ui">Needs Windows 11 24H2 or newer</span>, <span class="ui">Not available on this device</span>, <span class="ui">No pen found</span> or <span class="ui">Not available with compatible graphics</span>. For compatible graphics, see <a href="../../support/#if-noteic-closes-unexpectedly">Support</a>.</li>
+</ul>
+
+<h3 id="earlier-pen-input">Earlier pen input<a class="headerlink" href="#earlier-pen-input" aria-label="Link to this section">#</a></h3>
+<p>Noteic hands new strokes to the ink a few milliseconds sooner. It works with every pen and the highlighter, and may use a little more battery while you write.</p>
+<p>Without a pen, the switch is grey and the row says <span class="ui">No pen found</span>.</p>
+
+<h3 id="ink-prediction">Ink prediction<a class="headerlink" href="#ink-prediction" aria-label="Link to this section">#</a></h3>
+<p>The ink runs a little ahead of the pen tip. That shortens the visible gap between tip and line, but it can overshoot briefly when you lift the pen. It applies to the three pens, not to the see-through ink of the highlighter.</p>
+<div class="table-wrap">
+<table>
+  <tbody>
+    <tr><th scope="row">Off</th><td>No prediction</td></tr>
+    <tr><th scope="row">Gentle</th><td>8 ms ahead</td></tr>
+    <tr><th scope="row">Full</th><td>16 ms ahead</td></tr>
+    <tr><th scope="row">Max</th><td>24 ms ahead</td></tr>
+  </tbody>
+</table>
+</div>
+<p>From the start, Noteic uses <span class="ui">Off</span> while <span class="ui">Fast pen tip</span> draws the tip, and <span class="ui">Gentle</span> otherwise, for example on a PC that cannot use Fast pen tip or when you have turned it off. As soon as you choose a level yourself, that level always applies. A new level takes effect with your next stroke.</p>
+
+<h2 id="haptic-feedback">Haptic feedback<a class="headerlink" href="#haptic-feedback" aria-label="Link to this section">#</a></h2>
+<p>If your pen has haptics, it vibrates briefly when:</p>
+<ul>
+  <li>a stroke snaps to the <a href="../../guide/ruler-and-protractor/">ruler or the protractor</a>,</li>
+  <li>a stroke straightens or turns into a shape with <span class="ui">Hold for shape</span>,</li>
+  <li>a <a href="../../guide/shapes/#connectors">connector</a> docks to a shape,</li>
+  <li>a handle snaps into a step, for example while you rotate a selection with <kbd>Shift</kbd>,</li>
+  <li>the eraser removes something,</li>
+  <li>a lasso selects something.</li>
+</ul>
+<p><span class="ui">Haptic feedback</span> is on from the start. Turn it off under <span class="ui">…</span> › <span class="ui">Settings</span> › <span class="ui">Writing</span>.</p>
+<ul>
+  <li>It follows the haptic signals setting in Windows. If haptic signals are off there, the row says <span class="ui">Haptic signals are off in Windows</span>.</li>
+  <li>Without a pen that has haptics, the switch is grey and the row says <span class="ui">No haptic pen found</span>, <span class="ui">Not available on this device</span> or <span class="ui">Needs a newer version of Windows 11</span>.</li>
+</ul>
 
 <h2 id="widths">Widths<a class="headerlink" href="#widths" aria-label="Link to this section">#</a></h2>
 <p>The toolbar shows four widths, each drawn as thick as it writes.</p>
@@ -128,11 +195,11 @@
 </ul>
 
 <h2 id="colors">Colors<a class="headerlink" href="#colors" aria-label="Link to this section">#</a></h2>
-<p>Eight colors are in the toolbar; you can show up to ten (see <a href="../../guide/toolbar/">Customize the toolbar</a>).</p>
+<p>Eight colors are in the toolbar; you can show up to twelve under <span class="ui">Customize toolbar</span> › <span class="ui">Colors</span> (see <a href="../../guide/toolbar/#widths-and-colors">Customize the toolbar</a>).</p>
 <ul>
   <li>Tap a color to use it.</li>
   <li>Tap the active color again to change it: pick one of 20 color fields. Tap a field again to make it your own with a color field, a hue bar and a <span class="ui">Hex</span> box for codes like <code>#1F78EA</code>; <span class="ui">Reset</span> brings back its original color.</li>
-  <li><span class="ui">Switch palette</span> swaps between three palettes of ten colors each, per pen.</li>
+  <li><span class="ui">Switch palette</span> swaps between three palettes of twelve colors each, per pen.</li>
 </ul>
 <p>Pen ink is always fully opaque. For see-through color, use the <a href="../../guide/highlighter/">highlighter</a> or <a href="../../guide/fill-and-laser/">Fill</a>.</p>
     <nav class="pager" aria-label="Previous and next page">
@@ -146,6 +213,9 @@
     <ul>
       <li><a href="#choose-a-pen">Choose a pen</a></li>
       <li><a href="#pen-settings">Pen settings</a></li>
+      <li><a href="#hold-for-shape">Hold for shape</a></li>
+      <li><a href="#faster-ink">Faster ink</a></li>
+      <li><a href="#haptic-feedback">Haptic feedback</a></li>
       <li><a href="#widths">Widths</a></li>
       <li><a href="#colors">Colors</a></li>
     </ul>

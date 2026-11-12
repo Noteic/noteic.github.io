@@ -9,24 +9,42 @@ description: Work with several notes in Noteic: tabs, new windows, dragging tabs
   <img src="{{root}}assets/img/two-windows.jpg" width="1600" height="1014" alt="Two Noteic windows side by side, each with its own tabs." loading="lazy">
 </figure>
 
-<h2>Tabs</h2>
+<h2 id="tabs">Tabs</h2>
 <ul>
   <li>Every note you open gets a tab. Close it with its ×, a middle click, or <kbd>Ctrl</kbd>+<kbd>W</kbd>.</li>
-  <li>Drag tabs to reorder them.</li>
+  <li>Drag tabs to reorder them. With pen or finger, hold the tab for a moment before you drag.</li>
   <li><kbd>Ctrl</kbd>+<kbd>Tab</kbd> goes to the tab you used last, <kbd>Ctrl</kbd>+<kbd>Page Down</kbd> and <kbd>Ctrl</kbd>+<kbd>Page Up</kbd> to the next and previous tab.</li>
-  <li>With many tabs, the tab bar scrolls and an arrow lists all tabs.</li>
+  <li><span class="ui">…</span> › <span class="ui">Open in background</span> opens a note as a tab without switching to it.</li>
 </ul>
 <p>Noteic keeps up to 12 notes open. When you open more, it saves and closes the tab you used longest ago. Untitled notes are never closed this way.</p>
 
-<h2>Windows</h2>
+<h2 id="the-tab-bar">The tab bar</h2>
+<p>Tabs got a new look in Noteic 1.7. The tab you are in is a rounded field with a line in your accent color at the bottom; the other tabs are separated by thin lines.</p>
 <ul>
-  <li><span class="ui">…</span> › <span class="ui">New window</span> moves the current tab into its own window.</li>
-  <li>Or drag a tab down out of the tab bar: it opens in a new window where you drop it.</li>
-  <li>To move a tab into another Noteic window, drag it onto the tab bar of that window. A mark shows where it lands. Or use <span class="ui">…</span> › <span class="ui">Move to other window</span>.</li>
+  <li><strong>Whole title:</strong> when the title of the tab you are in is cut off, this tab gets wider to show more of it, and the other tabs make room.</li>
+  <li><strong>Many tabs:</strong> when the tabs do not all fit, the tab bar scrolls. Tap the arrows at its ends, turn the mouse wheel over it or swipe it with pen or finger. From the tenth tab on, it always scrolls.</li>
+  <li><strong>Always in view:</strong> the tab you are in stays fully visible, also when you make the window narrower.</li>
+  <li><strong>All tabs:</strong> with many tabs, a small arrow at the end of the tab bar lists all of them under <span class="ui">OPEN TABS</span>.</li>
+</ul>
+
+<h2 id="windows">Windows</h2>
+<ul>
+  <li><span class="ui">…</span> › <span class="ui">New window</span> moves the current tab into its own window. It needs at least two tabs in the window.</li>
+  <li>Or drag a tab up or down out of the tab bar: it opens in a new window where you drop it.</li>
+  <li>To move a tab into another Noteic window, drag it onto the tab bar of that window. A mark shows where it lands.</li>
   <li>When you close a window while another is open, its tabs move to the other window.</li>
 </ul>
 <p>The window title shows where the note lives, for example “Noteic › Statistics › Week 2 › Lecture”.</p>
 
-<h2>Full screen</h2>
+<h2 id="move-to-other-window">Move to other window</h2>
+<p>Without dragging: open <span class="ui">…</span> › <span class="ui">Move to other window</span>. The tab you are in moves into another Noteic window.</p>
+<ul>
+  <li>With one other window open, the tab moves there right away.</li>
+  <li>With several other windows, a list opens. Each window is named after the tab it shows. Tap the one you want.</li>
+  <li>With no other Noteic window open, the entry is grayed out. Use <span class="ui">New window</span> first.</li>
+</ul>
+
+<h2 id="full-screen">Full screen</h2>
 <p><span class="ui">…</span> › <span class="ui">Full screen</span>, <kbd>F11</kbd> or the full screen button in the zoom box hides the title bar and scroll bars; tabs and toolbar stay. The zoom box appears when you zoom.</p>
 <p>In full screen, the zoom box stays visible. Tap the button in it or press <kbd>F11</kbd> again to leave.</p>
+<p>To keep the zoom box on screen all the time, tap the pin at its end, <span class="ui">Pin zoom bar</span>. <span class="ui">Unpin zoom bar</span> lets it hide again. This came with Noteic 1.7.</p>

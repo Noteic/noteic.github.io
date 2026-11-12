@@ -74,7 +74,9 @@
         <li><a href="../guide/stickers/">Stickers</a></li>
         <li><a href="../guide/links/">Links</a></li>
         <li><a href="../guide/handwriting-to-text/">Handwriting to text</a></li>
+        <li><a href="../guide/search/">Search</a></li>
         <li><a href="../guide/pages-and-paper/">Pages and paper</a></li>
+        <li><a href="../guide/outline/">Outline</a></li>
         <li><a href="../guide/dark-pages/">Dark pages</a></li>
         <li><a href="../guide/whiteboard/">Whiteboard</a></li>
         <li><a href="../guide/pdf/">PDF</a></li>
@@ -115,7 +117,7 @@
 <div class="table-wrap">
 <table>
   <tbody>
-    <tr><th scope="row">Library</th><td>Opens and closes your notes on the left. <a href="../guide/library/">Library</a></td></tr>
+    <tr><th scope="row">Library</th><td>Opens and closes your notes on the left. Its <span class="ui">Search</span> also looks inside your notes. <a href="../guide/library/">Library</a>, <a href="../guide/search/">Search</a></td></tr>
     <tr><th scope="row">Pen</th><td>Ballpoint, fountain pen or calligraphy pen. Tap again for its settings. <a href="../guide/pens/">Pens</a></td></tr>
     <tr><th scope="row">Highlighter</th><td>Marks behind your writing. <a href="../guide/highlighter/">Highlighter</a></td></tr>
     <tr><th scope="row">Fill</th><td>Fills closed strokes with a see-through color. <a href="../guide/fill-and-laser/">Fill</a></td></tr>
@@ -124,18 +126,18 @@
     <tr><th scope="row">Text box</th><td>Typed text, tables and formulas. <a href="../guide/text/">Text</a></td></tr>
     <tr><th scope="row">Ruler</th><td>Ruler or protractor, in centimeters or inches. <a href="../guide/ruler-and-protractor/">Ruler and protractor</a></td></tr>
     <tr><th scope="row">Tool drawer</th><td>Memo tape and laser pointer. <a href="../guide/memo-tape/">Memo tape</a></td></tr>
-    <tr><th scope="row">Lasso selection</th><td>Select, move, scale, copy and recolor. On a whiteboard also Insert space. <a href="../guide/selection/">Selection</a></td></tr>
+    <tr><th scope="row">Lasso selection</th><td>Select, move, scale, copy and recolor. Press and hold for more: <span class="ui">Select text</span> for the text of a PDF, on a whiteboard <span class="ui">Insert space</span>. <a href="../guide/selection/">Selection</a>, <a href="../guide/pdf/#select-text">Select text</a></td></tr>
     <tr><th scope="row">Stickers</th><td>Opens your stickers next to the page. <a href="../guide/stickers/">Stickers</a></td></tr>
     <tr><th scope="row">Pan</th><td>Drag the view with pen, finger or mouse.</td></tr>
     <tr><th scope="row">Paste</th><td>Pastes what you copied.</td></tr>
-    <tr><th scope="row">Widths and colors</th><td>Four widths and eight colors for the current pen. Tap the active one again to change it.</td></tr>
+    <tr><th scope="row">Widths and colors</th><td>Four widths and eight colors for the current pen. Tap the active one again to change it. The toolbar can show up to twelve colors, see <a href="../guide/toolbar/#widths-and-colors">Widths and colors</a>.</td></tr>
     <tr><th scope="row">Undo, Redo</th><td><kbd>Ctrl</kbd>+<kbd>Z</kbd> and <kbd>Ctrl</kbd>+<kbd>Y</kbd></td></tr>
-    <tr><th scope="row">Pages</th><td>Shows the page number and opens the page overview. <a href="../guide/pages-and-paper/#page-overview">Page overview</a>. On a whiteboard it says <span class="ui">Whiteboard</span> and shows everything at once.</td></tr>
-    <tr><th scope="row">…</th><td>More: new, open, save, import image, PDF, full screen and settings.</td></tr>
+    <tr><th scope="row">Pages</th><td>Shows the page number and opens the page overview, with your bookmarks and the outline. <a href="../guide/pages-and-paper/#page-overview">Page overview</a>, <a href="../guide/outline/">Outline</a>. On a whiteboard it says <span class="ui">Whiteboard</span> and shows everything at once.</td></tr>
+    <tr><th scope="row">…</th><td>More: new, open, save, paper and size, import image, PDF, full screen and settings.</td></tr>
   </tbody>
 </table>
 </div>
-<p>You can hide tools you never use and move the toolbar to any edge of the window. See <a href="../guide/toolbar/">Customize the toolbar</a>. With a keyboard, <kbd>P</kbd>, <kbd>H</kbd>, <kbd>E</kbd> and <kbd>L</kbd> pick the pen, highlighter, eraser and lasso.</p>
+<p>You can hide tools you never use and move the toolbar to any edge of the window. See <a href="../guide/toolbar/">Customize the toolbar</a>. With a keyboard, <kbd>P</kbd>, <kbd>H</kbd>, <kbd>E</kbd> and <kbd>L</kbd> pick the pen, highlighter, eraser and lasso, and <kbd>Ctrl</kbd>+<kbd>F</kbd> searches the note, also what you wrote by hand. See <a href="../guide/search/">Search your notes</a>.</p>
 
 <h2 id="pen-touch-and-mouse">Pen, touch and mouse<a class="headerlink" href="#pen-touch-and-mouse" aria-label="Link to this section">#</a></h2>
 <ul>
@@ -156,9 +158,10 @@
   <li><span class="ui">Lock zoom</span> keeps the zoom where it is.</li>
   <li>In page-based notes, <span class="ui">Lock scrolling</span> holds the view in all directions, <span class="ui">Lock sideways</span> only left and right, and <span class="ui">Stop at edge</span> stops scrolling at the edge of the pages.</li>
 </ul>
+<p>To keep the zoom box on screen all the time, tap the pin at its end, <span class="ui">Pin zoom bar</span>.</p>
 
 <h2 id="where-your-notes-are-saved">Where your notes are saved<a class="headerlink" href="#where-your-notes-are-saved" aria-label="Link to this section">#</a></h2>
-<p>Your notes are <code>.noteic</code> files. By default Noteic keeps them in <code>Documents\Noteic</code>, your <em>workspace</em>. You can choose another folder, for example in OneDrive: open <span class="ui">…</span> › <span class="ui">Settings</span> and, under <span class="ui">Library</span>, tap <span class="ui">Use another folder</span>. Your notes stay where they are.</p>
+<p>Your notes are <code>.noteic</code> files. By default Noteic keeps them in <code>Documents\Noteic</code>, your <em>workspace</em>. You can choose another folder, for example in OneDrive: open <span class="ui">…</span> › <span class="ui">Settings</span>, choose <span class="ui">Library</span> and tap <span class="ui">Use another folder…</span>. Your notes stay where they are. See <a href="../guide/settings/#library">Settings</a>.</p>
 <ul>
   <li><strong>Save:</strong> <span class="ui">…</span> › <span class="ui">Save</span> or <kbd>Ctrl</kbd>+<kbd>S</kbd>. A new note asks for a name and a folder the first time. <span class="ui">Save as</span> is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>.</li>
   <li><strong>Autosave:</strong> once a note has a file, Noteic saves it by itself about 20 seconds after your last change. A star (*) in the tab means there are changes not yet in the file.</li>

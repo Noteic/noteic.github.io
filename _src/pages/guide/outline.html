@@ -1,0 +1,89 @@
+<!--
+title: Outline
+description: Give a Noteic note an outline with up to four levels: add pages as entries, rename, indent and delete them, and jump to a page with one tap. PDF bookmarks come in on import and go out on export.
+-->
+<h1>Outline <span class="badge">New in 1.7</span></h1>
+<p class="lead">A table of contents for your note, with up to four levels. One tap on an entry takes you to its page. Imported PDFs bring their bookmarks, and <span class="ui">Export as PDF</span> turns your outline into bookmarks.</p>
+
+<h2 id="open-the-outline">Open the outline</h2>
+<ol class="steps">
+  <li>Tap the page number in the toolbar, or press <kbd>Ctrl</kbd>+<kbd>G</kbd>. <span class="ui">Pages</span> opens.</li>
+  <li>At the top, choose <span class="ui">Outline</span>, next to <span class="ui">All</span> and <span class="ui">Bookmarked</span>.</li>
+</ol>
+<p>The outline is a list on the left, with your pages in two columns next to it. Each entry shows its page number on the right, and the entry your current page belongs to is marked.</p>
+<ul>
+  <li>Noteic remembers the tab you chose. The next time, <span class="ui">Pages</span> opens with it again.</li>
+  <li>In a narrow window, for example with two apps side by side, the <span class="ui">Outline</span> tab shows only the list. In a very narrow one, <span class="ui">Bookmarked</span> and <span class="ui">Outline</span> show as icons.</li>
+  <li>The outline belongs to page-based notes. A <a href="{{link:guide/whiteboard}}">whiteboard</a> has none.</li>
+</ul>
+<p>The other two tabs are described in <a href="{{link:guide/pages-and-paper#page-overview}}">Pages and paper › Page overview</a>.</p>
+
+<h2 id="add-an-entry">Add an entry</h2>
+<ol class="steps">
+  <li>Go to the page the entry should lead to.</li>
+  <li>Open <span class="ui">Pages</span> › <span class="ui">Outline</span> and tap <span class="ui">Add current page</span> below the list. In a note without entries, the button is in the middle, under “No outline yet”.</li>
+  <li>Type a title. Noteic suggests one from the top of the page: the first line of a PDF's text, of a text box or of your handwriting. If it finds nothing, the suggestion is the page, for example “Page 6”.</li>
+  <li>Choose a <span class="ui">Level</span> from 1 to 4 and tap <span class="ui">Add</span>, or press <kbd>Enter</kbd>.</li>
+</ol>
+<p>While you type, a dashed row in the list shows where the new entry will be. Entries always follow the order of your pages, and a page can have more than one entry.</p>
+<ul>
+  <li><strong>Any other page:</strong> in <span class="ui">Pages</span>, open the ⋮ menu under a page and choose <span class="ui">Add to outline…</span>. This works in all three tabs.</li>
+  <li><strong>Levels:</strong> level 1 is the top level, levels 2 to 4 are sub-entries. An entry can be at most one level deeper than the entry above it, so the first entry is always level 1. Levels you can't choose are grayed out.</li>
+  <li><strong>Titles</strong> can have up to 200 characters. The list shortens a long title with “…”. Rest the pointer on it to read all of it.</li>
+</ul>
+
+<h2 id="jump-to-a-page">Jump to a page</h2>
+<ul>
+  <li><strong>Tap an entry:</strong> Noteic goes to its page and closes <span class="ui">Pages</span>.</li>
+  <li><strong>Fold and unfold:</strong> tap the small arrow in front of an entry to hide or show its sub-entries. Noteic keeps this until you close the tab of the note.</li>
+  <li><strong>Scroll the pages</strong> next to the list, and the mark in the outline follows.</li>
+</ul>
+
+<h2 id="edit-entries">Rename, change the level, delete</h2>
+<p>The marked entry shows a <span class="ui">…</span> button, and so does the entry under your mouse pointer. Tap it, right-click an entry, or press and hold an entry. The menu has:</p>
+<div class="table-wrap">
+<table>
+  <tbody>
+    <tr><th scope="row">Rename</th><td>Type the new title and tap <span class="ui">Rename</span>, or press <kbd>Enter</kbd>.</td></tr>
+    <tr><th scope="row">Indent</th><td>One level deeper. Sub-entries move with their entry.</td></tr>
+    <tr><th scope="row">Outdent</th><td>One level higher. Sub-entries move with their entry.</td></tr>
+    <tr><th scope="row">Delete entry</th><td>Removes the entry; the page stays. Its sub-entries move up one level. At the bottom of <span class="ui">Pages</span>, “Entry deleted” appears with <span class="ui">Undo</span>.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>What is not possible is grayed out, for example <span class="ui">Indent</span> on level 4.</p>
+<ul>
+  <li><strong>Drag to change the level:</strong> drag an entry to the right or to the left, with pen, finger or mouse. A label shows the new level, for example “Level 3”, or “Level 2 · 3 entries” when sub-entries move along. “Max. 4 levels” means the entry or one of its sub-entries would go deeper than level 4.</li>
+  <li><strong>Move an entry:</strong> entries follow their pages. Drag the page to another place in <span class="ui">Pages</span>, and its entry moves with it.</li>
+  <li><strong>Delete a page,</strong> and its entries go with it. A page you duplicate or copy gets no entry.</li>
+  <li><strong>Undo:</strong> every change to the outline is one step. <kbd>Ctrl</kbd>+<kbd>Z</kbd> and <kbd>Ctrl</kbd>+<kbd>Y</kbd> also work while <span class="ui">Pages</span> is open.</li>
+</ul>
+
+<h2 id="keys">Keys in the outline</h2>
+<div class="table-wrap">
+<table>
+  <tbody>
+    <tr><th scope="row"><kbd>↑</kbd>, <kbd>↓</kbd></th><td>Previous and next entry</td></tr>
+    <tr><th scope="row"><kbd>Home</kbd>, <kbd>End</kbd></th><td>First and last entry</td></tr>
+    <tr><th scope="row"><kbd>→</kbd></th><td>Unfold the entry, or go to its first sub-entry</td></tr>
+    <tr><th scope="row"><kbd>←</kbd></th><td>Fold the entry, or go to the entry it belongs to</td></tr>
+    <tr><th scope="row"><kbd>Enter</kbd></th><td>Go to the page of the entry</td></tr>
+    <tr><th scope="row"><kbd>F2</kbd></th><td>Rename</td></tr>
+    <tr><th scope="row"><kbd>Delete</kbd></th><td>Delete the entry</td></tr>
+    <tr><th scope="row"><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>→</kbd>, <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>←</kbd></th><td>Indent and outdent</td></tr>
+    <tr><th scope="row"><kbd>Shift</kbd>+<kbd>F10</kbd> or the menu key</th><td>Open the menu of the entry</td></tr>
+    <tr><th scope="row"><kbd>Esc</kbd></th><td>Close the menu or the title field, then <span class="ui">Pages</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="pdf-bookmarks">PDF bookmarks</h2>
+<p>Many PDFs come with their own table of contents, called bookmarks. Noteic keeps them on the way in and on the way out.</p>
+<ul>
+  <li><strong>Import:</strong> when you <a href="{{link:guide/pdf#import-a-pdf}}">import a PDF</a>, the bookmarks of the pages you import become outline entries. Entries you already have stay. Bookmarks that lead to a website or to another file are left out. Undo takes back the pages and their entries in one step.</li>
+  <li><strong>Levels:</strong> bookmarks down to level 4 keep their level, deeper ones become level 4. Bookmarks under a bookmark that is left out move up. One import brings up to 1,000 entries; if a PDF has more, the deepest levels are left out first.</li>
+  <li><strong>Long outlines:</strong> an outline with more than 300 entries opens folded, with the branch of your current page open.</li>
+  <li><strong>Export:</strong> <a href="{{link:guide/pdf#export-as-pdf}}">Export as PDF</a> writes your outline into the PDF as bookmarks, with the same levels as in the list. If you export only some pages, only their entries go along, and sub-entries of an entry that stays behind move up.</li>
+</ul>
+<div class="note"><strong>Outline or bookmarks?</strong>The colored bookmarks you set on pages in <span class="ui">Pages</span> are marks for yourself: they stay in Noteic and are not exported. What a PDF calls bookmarks is the outline.</div>
+<div class="note"><strong>Older versions of Noteic</strong>Noteic 1.6 and older do not show the outline.</div>
