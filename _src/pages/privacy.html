@@ -5,7 +5,7 @@ description: Noteic sends no data to the developer. No accounts, no advertising,
 -->
 <h1>Noteic Privacy Policy</h1>
 
-<p><em>Effective date: 28 September 2026</em></p>
+<p><em>Effective date: 12 November 2026</em></p>
 
 <p>Noteic is a page-based note-taking app for Windows, developed by Stefan Bogdanovic. This policy explains which data Noteic processes and where it goes.</p>
 
@@ -19,7 +19,41 @@ description: Noteic sends no data to the developer. No accounts, no advertising,
 
 <h2>Data kept on your device</h2>
 
-<p>Noteic stores its settings, the list of recently used notebooks, recovery copies of unsaved work and technical logs (error and performance reports) in its app data folders on your device. These files stay on your device unless you pass them on yourself.</p>
+<p>Noteic stores the following in its app data folders on your device:</p>
+
+<ul>
+  <li>its settings and the list of recently used notebooks;</li>
+  <li>recovery copies of unsaved work, and working copies of notes that are in a cloud folder;</li>
+  <li>copies of the PDFs in your notes, so that it can show them;</li>
+  <li>the search index described below, and small progress markers for removing old words from large notes;</li>
+  <li>technical logs (error and performance reports), and a list of PDF pages that made the PDF engine crash, so that Noteic skips them.</li>
+</ul>
+
+<p>These files stay on your device unless you pass them on yourself.</p>
+
+<h2>Handwriting search</h2>
+
+<p>To make your handwriting searchable, Noteic reads it on your device with the handwriting recognizer built into Windows. This works offline; your ink is not sent anywhere for it. While your PC is plugged in and battery saver is off, Noteic reads your open and recently opened notes in the background. Otherwise it reads only when you search in a note or tap Read now in the library search.</p>
+
+<p>Noteic keeps the recognized words in a search index in its app data folder on your device, together with the typed text, table and formula text and PDF text of your notes and the locations of the notes it has read. The index never leaves your device. Uninstalling Noteic deletes it.</p>
+
+<p>When Noteic saves a note, it also stores the recognized words inside the note file, including other possible readings of each word. This way the note does not have to be read again on another device. These words travel with the note like your ink, for example to a cloud folder you chose or to anyone you share the note with.</p>
+
+<p>You can turn reading off in Settings › Library › Read handwriting for search. Noteic then reads no handwriting and stores no new words in your notes; typed text and PDF text stay searchable. Settings › Library › Clear recognized words empties the search index on this PC. Neither option changes your notes: words already stored in a note stay there as long as the handwriting they belong to is there. After Clear recognized words, Noteic takes them from the note again when it reads the note.</p>
+
+<p>When you erase handwriting in Noteic, its words are usually removed from the note the next time the note is saved. Words of handwriting that was erased elsewhere, for example in an older version of Noteic, are removed when you save the note yourself (Ctrl+S or Save) or close it with unsaved changes; automatic saving does not do this. Each such save checks the words of about 1,500 strokes, newest first, and the next one continues where it stopped, also after a restart. A very large note therefore needs many saves, for example about 65 for a note with 100,000 strokes. Until then, these words remain in the note file. Save as copies only the words of handwriting that is still there; the original note stays as it is.</p>
+
+<p>When Noteic removes words from a note, it overwrites them in the file. Until you close the note, older copies can still be in the note file and in the temporary files next to it. For a note in a cloud folder, they can also be in Noteic’s working copy in its app data folder until you press Ctrl+S or close the note. After that, they are gone from these files. In rare cases, the database inside the note can keep an old copy in unused space until it reuses that space.</p>
+
+<p>Noteic does not remove words:</p>
+
+<ul>
+  <li>from notes it opens read-only, for example a note that is already open elsewhere or was saved by a newer version of Noteic;</li>
+  <li>from a note after an error while writing or removing words, until you open the note again;</li>
+  <li>from earlier copies of a note, for example in your cloud’s version history, in backups, in the Recycle Bin, or the original note after Save as.</li>
+</ul>
+
+<p>Copies of words that another program or another version of Noteic left in unused space of a note file, without overwriting them, stay there until that space is reused. What your drive does with deleted data is outside Noteic’s control.</p>
 
 <h2>Internet access</h2>
 
@@ -27,7 +61,7 @@ description: Noteic sends no data to the developer. No accounts, no advertising,
 
 <ul>
   <li><strong>Images from the web.</strong> When you drag an image from a website into a note, or paste a link to an image, Noteic downloads that image directly from the website. The website receives an ordinary web request, like from a browser: it includes your IP address and identifies the program as “Noteic”.</li>
-  <li><strong>Links in notes.</strong> When you click a web or e-mail link in a note, Noteic hands it to your default browser or e-mail program.</li>
+  <li><strong>Links.</strong> When you click a web or e-mail link in a note, or a link in Noteic itself such as Contact or r/Noteic on Reddit in Settings › About, Noteic hands it to your default browser or e-mail program.</li>
 </ul>
 
 <p>Noteic sends no other data over the network.</p>
