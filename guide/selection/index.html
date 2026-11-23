@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Selection and lasso &#183; Noteic</title>
-<meta name="description" content="Select with the lasso or a rectangle in Noteic, then move, scale, rotate, copy, recolor with your toolbar colors, save as a sticker or drag your selection onto another page.">
+<meta name="description" content="Select with the lasso or a rectangle in Noteic, then move, scale, rotate, flip, copy, recolor with your toolbar colors, save as a sticker or drag your selection onto another page.">
 <meta name="msvalidate.01" content="E3097E87B483329F33ED7D807CC28C64">
 <link rel="canonical" href="https://noteic.github.io/guide/selection/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Noteic">
 <meta property="og:title" content="Selection and lasso &#183; Noteic">
-<meta property="og:description" content="Select with the lasso or a rectangle in Noteic, then move, scale, rotate, copy, recolor with your toolbar colors, save as a sticker or drag your selection onto another page.">
+<meta property="og:description" content="Select with the lasso or a rectangle in Noteic, then move, scale, rotate, flip, copy, recolor with your toolbar colors, save as a sticker or drag your selection onto another page.">
 <meta property="og:url" content="https://noteic.github.io/guide/selection/">
 <meta property="og:image" content="https://noteic.github.io/assets/img/two-windows.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -65,6 +65,7 @@
         <li><a href="../../guide/pens/">Pens</a></li>
         <li><a href="../../guide/highlighter/">Highlighter</a></li>
         <li><a href="../../guide/eraser/">Eraser</a></li>
+        <li><a href="../../guide/scribble-to-erase/">Scribble to erase</a></li>
         <li><a href="../../guide/fill-and-laser/">Fill and laser pointer</a></li>
         <li><a href="../../guide/selection/" aria-current="page">Selection and lasso</a></li>
         <li><a href="../../guide/shapes/">Shapes</a></li>
@@ -72,6 +73,7 @@
         <li><a href="../../guide/text/">Text, formulas and tables</a></li>
         <li><a href="../../guide/memo-tape/">Memo tape</a></li>
         <li><a href="../../guide/stickers/">Stickers</a></li>
+        <li><a href="../../guide/zoom-window/">Zoom window</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
         <li><a href="../../guide/search/">Search</a></li>
@@ -84,6 +86,7 @@
         <li><a href="../../guide/tabs-and-windows/">Tabs and windows</a></li>
         <li><a href="../../guide/toolbar/">Customize the toolbar</a></li>
         <li><a href="../../guide/pen-and-mouse-buttons/">Pen and mouse buttons</a></li>
+        <li><a href="../../guide/undo-with-your-fingers/">Undo with your fingers</a></li>
         <li><a href="../../guide/settings/">Settings</a></li>
         <li><a href="../../guide/shortcuts/">Keyboard shortcuts</a></li>
       </ul></li>
@@ -95,7 +98,7 @@
   <main class="content" id="main">
     <article>
 <h1>Selection and lasso</h1>
-<p class="lead">Circle what you want to change. Then move it, scale it, rotate it, copy it, give it a new color or drag it onto another page.</p>
+<p class="lead">Circle what you want to change. Then move it, scale it, rotate it, flip it, copy it, give it a new color or drag it onto another page.</p>
 
 <h2 id="select">Select<a class="headerlink" href="#select" aria-label="Link to this section">#</a></h2>
 <ol class="steps">
@@ -121,7 +124,7 @@
   <li><strong>Stretch:</strong> drag the middle of a side.</li>
   <li><strong>Rotate:</strong> drag the round knob above the frame. Hold <kbd>Shift</kbd> for 15° steps.</li>
 </ul>
-<p>A single line, arrow or polygon also shows dots on its points. Drag them to reshape it; dragging the middle of a curved arrow bends it.</p>
+<p>A single line, arrow or polygon also shows dots on its points. Drag them to reshape it; dragging the middle of a curved arrow or a curve bends it. A curved spline shows only its frame.</p>
 <ul>
   <li><strong>Connectors:</strong> when you move, scale or rotate a shape, its connectors follow. A selected connector shows a dot at each end: drag it onto another shape to attach the end there, or onto empty paper to release it. See <a href="../../guide/shapes/#connectors">Connectors</a>.</li>
   <li><strong>Yellow point and tilt handle:</strong> some arrows and the burst show a yellow point, and 3D shapes a round handle in the middle. See <a href="../../guide/shapes/#change-a-shape-later">Change a shape later</a>.</li>
@@ -136,31 +139,38 @@
 </ul>
 
 <h2 id="the-selection-bar">The selection bar<a class="headerlink" href="#the-selection-bar" aria-label="Link to this section">#</a></h2>
-<p>Under the selection, a small bar offers what fits your selection:</p>
+<p>Under the selection, a small bar offers what fits your selection. Since Noteic 1.8, it moves out of the way of every handle, so it never covers the rotate knob or a corner.</p>
 <ul>
   <li><span class="ui">Convert to text</span> for handwriting. See <a href="../../guide/handwriting-to-text/">Handwriting to text</a>.</li>
   <li><span class="ui">Edit text box</span>, <span class="ui">Edit formula</span> or <span class="ui">Crop image</span> when one of those is selected.</li>
   <li><span class="ui">Cut</span>, <span class="ui">Copy</span> and <span class="ui">Duplicate</span>.</li>
   <li><span class="ui">Save as sticker</span>: keep the selection to place it again in any note. See <a href="../../guide/stickers/">Stickers</a>.</li>
+  <li><span class="ui">Flip horizontal</span> and <span class="ui">Flip vertical</span>, see below.</li>
   <li><span class="ui">Style</span> (the palette): line width and color, see below.</li>
   <li><span class="ui">Anchor link</span>: link the selection to a spot in your notes. See <a href="../../guide/links/">Links</a>.</li>
   <li><span class="ui">Delete</span>.</li>
+</ul>
+
+<h2 id="flip">Flip<a class="headerlink" href="#flip" aria-label="Link to this section">#</a></h2>
+<p>Tap <span class="ui">Flip horizontal</span> or <span class="ui">Flip vertical</span> in the selection bar, or press <kbd>Shift</kbd>+<kbd>H</kbd> or <kbd>Shift</kbd>+<kbd>V</kbd>. This came with Noteic 1.8.</p>
+<ul>
+  <li>Handwriting, shapes and images are mirrored. Memo tape stays upright.</li>
+  <li>If Noteic can't flip an image, it is not mirrored, and Noteic tells you. Selected together with other things, it only changes places.</li>
+  <li>Text boxes keep their text readable and only change places. For a text box on its own, the buttons don't show.</li>
+  <li>A few shapes, such as the speech bubbles, the parallelogram and some 3D shapes, can't be flipped on their own: the buttons are grayed out and say “This shape can't be flipped”. Selected together with other things, they only change places.</li>
+  <li>One undo takes a flip back.</li>
 </ul>
 
 <h2 id="style-and-color">Style and color<a class="headerlink" href="#style-and-color" aria-label="Link to this section">#</a></h2>
 <p>Tap <span class="ui">Style</span> in the selection bar. A compact field opens below the selection bar, or next to it when there is no room, and never covers your selection.</p>
 <ul>
   <li><span class="ui">Line</span>: the width in millimeters, from 0.1 to 2 mm.</li>
-  <li><strong>Colors:</strong> the same colors as in your toolbar, in the same order, up to twelve. Tap one to recolor the selection.</li>
-  <li><strong>Change a toolbar color:</strong> tap the marked color again, or the palette button at the end of the row. The selection and the toolbar color change together, and Noteic keeps the new color.</li>
-  <li>When the selection has a color that is not in your toolbar, the palette button picks a one-time color with a color field and a <span class="ui">Hex</span> box.</li>
-  <li><strong>Shapes</strong> also get the line style, <span class="ui">Fill</span>, and <span class="ui">Outline</span> or <span class="ui">Fill</span> to choose which part you color.</li>
+  <li><strong>Colors:</strong> the same colors as in your toolbar, in the same order, up to twelve. Tap one to recolor the selection. To change a toolbar color, change it in the toolbar.</li>
+  <li><span class="ui">Custom</span>: a color of your own, also as a hex code like <code>#2F6FDE</code>. Type it and press <kbd>Enter</kbd>.</li>
+  <li><strong>Shapes</strong> also get the line style, and <span class="ui">Outline</span> or <span class="ui">Fill</span> to choose which part you color. <span class="ui">Fill</span> has its own fill colors and a field for no fill, as in the <a href="../../guide/shapes/#line-fill-and-color">shapes menu</a>.</li>
   <li><strong>Number lines</strong> also get <span class="ui">Spacing</span>: <span class="ui">−</span> and <span class="ui">+</span> set how far the ticks are apart, from 2 to 50 mm. See <a href="../../guide/shapes/#number-line">Number line</a>.</li>
 </ul>
 <p>Highlighter stays see-through when you recolor it.</p>
-<figure>
-  <img src="../../assets/img/new-1-5-1-selection-colors.jpg" width="1280" height="720" alt="A handwritten formula selected with the lasso, the selection bar with Style, and the compact Style field with the eight colors of the toolbar." loading="lazy">
-</figure>
 
 <h2 id="copy-and-paste">Copy and paste<a class="headerlink" href="#copy-and-paste" aria-label="Link to this section">#</a></h2>
 <ul>
@@ -183,6 +193,7 @@
       <li><a href="#move-scale-and-rotate">Move, scale and rotate</a></li>
       <li><a href="#small-selections">Small selections</a></li>
       <li><a href="#the-selection-bar">The selection bar</a></li>
+      <li><a href="#flip">Flip</a></li>
       <li><a href="#style-and-color">Style and color</a></li>
       <li><a href="#copy-and-paste">Copy and paste</a></li>
     </ul>

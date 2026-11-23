@@ -65,6 +65,7 @@
         <li><a href="../../guide/pens/" aria-current="page">Pens</a></li>
         <li><a href="../../guide/highlighter/">Highlighter</a></li>
         <li><a href="../../guide/eraser/">Eraser</a></li>
+        <li><a href="../../guide/scribble-to-erase/">Scribble to erase</a></li>
         <li><a href="../../guide/fill-and-laser/">Fill and laser pointer</a></li>
         <li><a href="../../guide/selection/">Selection and lasso</a></li>
         <li><a href="../../guide/shapes/">Shapes</a></li>
@@ -72,6 +73,7 @@
         <li><a href="../../guide/text/">Text, formulas and tables</a></li>
         <li><a href="../../guide/memo-tape/">Memo tape</a></li>
         <li><a href="../../guide/stickers/">Stickers</a></li>
+        <li><a href="../../guide/zoom-window/">Zoom window</a></li>
         <li><a href="../../guide/links/">Links</a></li>
         <li><a href="../../guide/handwriting-to-text/">Handwriting to text</a></li>
         <li><a href="../../guide/search/">Search</a></li>
@@ -84,6 +86,7 @@
         <li><a href="../../guide/tabs-and-windows/">Tabs and windows</a></li>
         <li><a href="../../guide/toolbar/">Customize the toolbar</a></li>
         <li><a href="../../guide/pen-and-mouse-buttons/">Pen and mouse buttons</a></li>
+        <li><a href="../../guide/undo-with-your-fingers/">Undo with your fingers</a></li>
         <li><a href="../../guide/settings/">Settings</a></li>
         <li><a href="../../guide/shortcuts/">Keyboard shortcuts</a></li>
       </ul></li>
@@ -132,9 +135,10 @@
 <ul>
   <li><strong>Closed strokes</strong> become a clean rectangle, triangle, ellipse, circle or polygon.</li>
   <li><strong>Open strokes</strong> become a straight line. A line that is almost horizontal or vertical snaps exactly horizontal or vertical.</li>
+  <li><strong>Arrows and curves:</strong> since Noteic 1.8, a hand-drawn arrow becomes a clean arrow, also a double or curved arrow, and with the head drawn as a second stroke. An arc becomes a clean curve. The head keeps the size you drew. This works with the three pens, not with the highlighter.</li>
   <li><strong>Add a corner:</strong> after a line has snapped, keep drawing without lifting the pen. Hold again, or lift the pen, and the next piece is straight too.</li>
   <li>The result is ink in the pen you write with, in its color and width. With the calligraphy pen, the line still gets thick and thin with the direction.</li>
-  <li>It works with the ballpoint, the fountain pen, the calligraphy pen and the <a href="../../guide/highlighter/#hold-for-shape">highlighter</a>, with a pen and with the mouse.</li>
+  <li>It works with the ballpoint, the fountain pen, the calligraphy pen and the <a href="../../guide/highlighter/#hold-for-shape">highlighter</a>, with a pen and with the mouse, also in the <a href="../../guide/zoom-window/#shapes-in-the-strip">zoom window</a>.</li>
   <li><kbd>Ctrl</kbd>+<kbd>Z</kbd> removes the whole shape.</li>
   <li>Very small strokes, up to about 5 mm, are never turned into a shape, so dots and small letters stay handwriting.</li>
 </ul>
@@ -169,15 +173,18 @@
 </table>
 </div>
 <p>From the start, Noteic uses <span class="ui">Off</span> while <span class="ui">Fast pen tip</span> draws the tip, and <span class="ui">Gentle</span> otherwise, for example on a PC that cannot use Fast pen tip or when you have turned it off. As soon as you choose a level yourself, that level always applies. A new level takes effect with your next stroke.</p>
+<p>Since Noteic 1.8, a level you choose also works at the <a href="#fast-pen-tip">Fast pen tip</a>: 8, 12 or 15 ms ahead, and up to 10, 15 or 20 ms on quick, straight strokes.</p>
 
 <h2 id="haptic-feedback">Haptic feedback<a class="headerlink" href="#haptic-feedback" aria-label="Link to this section">#</a></h2>
 <p>If your pen has haptics, it vibrates briefly when:</p>
 <ul>
   <li>a stroke snaps to the <a href="../../guide/ruler-and-protractor/">ruler or the protractor</a>,</li>
+  <li>the <a href="../../guide/ruler-and-protractor/#ruler">ruler</a> snaps to 0°, 45°, 90° and so on while you turn it with the pen,</li>
   <li>a stroke straightens or turns into a shape with <span class="ui">Hold for shape</span>,</li>
   <li>a <a href="../../guide/shapes/#connectors">connector</a> docks to a shape,</li>
   <li>a handle snaps into a step, for example while you rotate a selection with <kbd>Shift</kbd>,</li>
   <li>the eraser removes something,</li>
+  <li>a zigzag erases something with <a href="../../guide/scribble-to-erase/">Scribble to erase</a>,</li>
   <li>a lasso selects something.</li>
 </ul>
 <p><span class="ui">Haptic feedback</span> is on from the start. Turn it off under <span class="ui">…</span> › <span class="ui">Settings</span> › <span class="ui">Writing</span>.</p>

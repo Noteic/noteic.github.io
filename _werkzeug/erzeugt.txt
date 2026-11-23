@@ -15,6 +15,7 @@ guide/pdf/index.html
 guide/pen-and-mouse-buttons/index.html
 guide/pens/index.html
 guide/ruler-and-protractor/index.html
+guide/scribble-to-erase/index.html
 guide/search/index.html
 guide/selection/index.html
 guide/settings/index.html
@@ -24,7 +25,9 @@ guide/stickers/index.html
 guide/tabs-and-windows/index.html
 guide/text/index.html
 guide/toolbar/index.html
+guide/undo-with-your-fingers/index.html
 guide/whiteboard/index.html
+guide/zoom-window/index.html
 index.html
 privacy/index.html
 support/index.html
